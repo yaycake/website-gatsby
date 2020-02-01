@@ -32,6 +32,8 @@ const ProjectsPage = () => {
       }
     `)
 
+
+
     const projects = data.allProjectsJson.edges;
 
     console.log("PROJECTS: ")
@@ -48,8 +50,6 @@ const ProjectsPage = () => {
       imageData: projects[0].node.image.childImageSharp.fluid
     })
 
-
-
     //Create Title Array for ScrollMenu Component
     let titleArray = [];
 
@@ -60,15 +60,40 @@ const ProjectsPage = () => {
       })
     })
 
+    // findProjectHandler
+    const findProjectHandler = (selSlug) => {
+      
+      return projects.find( (project) => ( project.node.slug === selSlug )
+      )
+    }
+
     // Create Event listener function for ScrollMenu Component
 
+    const selectProjectHandler = (currSlug) => {
+      console.log('in selectProjectHandler')
+      console.log(currSlug)
+  
+      const selectedProject = findProjectHandler(currSlug)
+        
+      console.log("found?")
+      console.log(selectedProject)
 
+      setCurrProject({
+        title: selectedProject.node.title, 
+        slug: selectedProject.node.slug, 
+        imageData: selectedProject.node.image.childImageSharp.fluid
+      })
+
+    }
     
 
     return (
         <Layout>
             <h1>Projects</h1>
-            <ScrollMenu array = {titleArray} />
+            <ScrollMenu 
+              array = {titleArray} 
+              selectProject = {selectProjectHandler}
+            />
 
             <ProjectProfile
               title = {currProject.title}
