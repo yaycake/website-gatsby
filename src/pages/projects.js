@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "gatsby-image"
 import SEO from "../components/seo"
 import ProjectPreview from '../components/projectPreview'
-
+import ProjectProfile from '../components/projectProfile'
 
 const ProjectsPage = () => {
     const data = useStaticQuery(graphql`
@@ -44,7 +44,7 @@ const ProjectsPage = () => {
                 const imageData = project.image.childImageSharp.fluid;
 
                 return (
-                    <ProjectPreview
+                    <ProjectProfile
                       title = {title}
                       slug = {slug}
                       imageData = {imageData}
