@@ -7,7 +7,9 @@ import MenuToggle from './UI/menuToggle'
 const Header = ({ siteTitle }) => (
   <header className = {styles.Header}>
     <div className = {styles.logo}>
-      <h1>G/Y</h1>
+      <Link className = {styles.logoLink} to="/">
+        <h1>G/Y</h1>
+      </Link>
     </div>
     <MenuToggle/>
   </header>

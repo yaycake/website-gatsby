@@ -1,0 +1,24 @@
+.thinH1, .thinH4 {
+    font-weight: normal
+}
+
+h4 {
+    padding: 8px 0;
+}
+
+.landingLink {
+    text-decoration: none;
+    color: black;
+}
+
+.landingActions {
+    font-size: 20px; 
+    display: flex; 
+    width: 400px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.previewAction {
+    border-bottom: 2px solid rgba(0,0,0,1)
+}
