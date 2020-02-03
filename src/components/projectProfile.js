@@ -4,10 +4,10 @@ import React from "react"
 import styles from './projectProfile.module.css'
 import Image from 'gatsby-image'
 
-const ProjectProfile= ({ title, imageData }) => {
+const ProjectProfile= ({ title, slug, imageData }) => {
     return (
 
-        <div className ={styles.projectPreview}>
+        <div data-title={slug} className ={styles.projectPreview}>
             <h2>{title} Page</h2>
             
             <Image fluid = {imageData} alt ={title}/>

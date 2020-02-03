@@ -1,12 +1,14 @@
 [
     {
-        "title": "Project 1", 
-        "slug": "project-1", 
-        "url": "https://project.com", 
-        "image": "./images/hk.jpg", 
+        "id" : 1, 
+        "title": "Ubisoft", 
+        "slug": "ubisoft", 
+        "url": "http://en.chinajoy.net", 
+        "image": "./images/ubi_cj.jpg", 
         "description": "I built this"
     }, 
     {
+        "id": 2,
         "title": "Project 2", 
         "slug": "project-2", 
         "url": "https://project2.com", 
