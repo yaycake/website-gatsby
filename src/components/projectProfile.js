@@ -12,7 +12,7 @@ const ProjectProfile= ({ title, slug, featuredImage, html}) => {
             
             <Image fluid = {featuredImage} alt ={title}/>
             <div
-                className="blog-post-content"
+                className="projectContent"
                 dangerouslySetInnerHTML={{ __html: html }}
             />
             

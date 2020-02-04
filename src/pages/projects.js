@@ -10,29 +10,6 @@ import ScrollMenu from '../components/UI/scrollMenu'
 
 const ProjectsPage = () => {
 
-    // const data = useStaticQuery(graphql`
-    // {
-    //     allProjectsJson {
-    //       edges {
-    //         node{
-    //           id
-    //           title
-    //           url
-    //           slug
-    //           image {
-    //             publicURL
-    //             childImageSharp {
-    //               fluid {
-    //                 ...GatsbyImageSharpFluid
-    //               }
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // `)
-
     const data = useStaticQuery(graphql`
       {
         allMarkdownRemark {
@@ -60,8 +37,6 @@ const ProjectsPage = () => {
         }
       }
     `)
-
-    // const projects = data.allProjectsJson.edges;
 
     const projects = data.allMarkdownRemark.edges;
 
@@ -130,8 +105,9 @@ const ProjectsPage = () => {
               title = {currProject.title}
               slug = {currProject.slug}
               featuredImage = {currProject.featuredImageData}
+              html = {currProject.html}
             />
-{/*             
+          {/*             
             { projects.map(({ node: project }) => {
                 const title = project.frontmatter.title; 
                 const slug = project.frontmatter.slug; 
@@ -148,7 +124,6 @@ const ProjectsPage = () => {
                 )
             })} */}
 
-            
         </Layout>
     )
 }
