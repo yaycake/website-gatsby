@@ -4,13 +4,18 @@ import React from "react"
 import styles from './projectProfile.module.css'
 import Image from 'gatsby-image'
 
-const ProjectProfile= ({ title, slug, imageData }) => {
+const ProjectProfile= ({ title, slug, featuredImage, html}) => {
     return (
 
         <div data-title={slug} className ={styles.projectPreview}>
             <h2>{title} Page</h2>
             
-            <Image fluid = {imageData} alt ={title}/>
+            <Image fluid = {featuredImage} alt ={title}/>
+            <div
+                className="projectContent"
+                dangerouslySetInnerHTML={{ __html: html }}
+            />
+            
         </div>
     )
    

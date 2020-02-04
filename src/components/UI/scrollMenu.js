@@ -7,7 +7,7 @@ const ScrollMenu = ({ array, selectProject}) => {
         <div className = {styles.scrollMenu}>
             { array.map( object => {
                 return (
-                    <div onClick = {() => {selectProject(object.slug)}} key={object.slug} id = {object.slug} className = {styles.scrollMenuTitle}>
+                    <div onClick = {() => {selectProject(object.id)}} key={object.id} id = {object.slug} className = {styles.scrollMenuTitle}>
                         { object.title}
                     </div>
                 )
