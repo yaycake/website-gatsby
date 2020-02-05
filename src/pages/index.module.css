@@ -9,15 +9,23 @@ h4 {
 .landingLink {
     text-decoration: none;
     color: black;
+    text-align:center;
+    margin: auto; 
 }
 
 .landingActions {
-    font-size: 20px; 
+    font-size: 36px; 
     display: flex; 
-    width: 400px;
     justify-content: space-between;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin: 0 auto; 
+    padding: 120px 0px;
+    height: 70vh;
 }
+
 
 .previewAction {
     border-bottom: 2px solid rgba(0,0,0,1)

@@ -1,0 +1,23 @@
+.tileLarge {
+    display: flex;
+    flex-direction: column; 
+    margin: 40px auto;
+    max-width: 500px;
+}
+.tileLarge_title {
+    font-size: 24px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tileLarge_type {
+    font-size: 16px; 
+    text-align: right; 
+    text-transform: uppercase;
+}
+
+.tileLarge_image {
+    max-width: 500px;
+    max-height: 300px;
+    border-radius: 4px;
+}

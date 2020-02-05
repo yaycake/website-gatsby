@@ -40,8 +40,7 @@ const Layout = ({ children }) => {
         <main className = "mainContent">
           {children}
         </main>
-        {/* <Footer></Footer> */}
-      {/* </div> */}
+       
       <Footer></Footer>
       
     </React.Fragment>

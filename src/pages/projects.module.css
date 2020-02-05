@@ -1,0 +1,32 @@
+.projectContainer {
+   
+    /* padding-left: 80px; */
+ 
+}
+
+.projectHeader {
+    margin: auto; 
+    height: 2.25rem;
+    text-align: center;
+    font-weight: normal;
+    font-size: 28px;
+    margin: 40px 0 
+}
+
+.viewOptions { 
+    
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    justify-items: center;
+    margin: 40px 0
+}
+
+.viewToggle { 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    background-color: black; 
+    margin:16px;
+  
+}
