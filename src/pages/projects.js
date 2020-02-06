@@ -33,6 +33,7 @@ const ProjectsPage = () => {
                 title
                 author
                 date
+                slug
                 featuredImage {
                   childImageSharp {
                     fluid(maxWidth: 800) {
@@ -44,8 +45,6 @@ const ProjectsPage = () => {
                 contributions
                 skills
                 engagementPeriod
-
-
               }
             }
           }

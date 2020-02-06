@@ -1,6 +1,6 @@
 ---
 title: Ubisoft
-slug: project-1
+slug: ubisoft
 author: Grace Yang
 date: 2020-01-01 
 featuredImage: ../images/ubi_cj.jpg

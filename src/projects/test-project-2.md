@@ -1,6 +1,6 @@
 ---
 title: Le Wagon China
-slug: project-2
+slug: le-wagon-china
 author: Grace Yang
 date: 2020-01-02
 featuredImage: ../images/hk.jpg
