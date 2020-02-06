@@ -1,11 +1,11 @@
 import React from 'react'; 
 import { graphql } from 'gatsby'; 
 import Layout from '../components/layout';
-import ProjectProfile from '../components/projectProfile'; 
-
+import Image from "gatsby-image"
+import styles from './project.module.css'
 
 export const pageQuery = graphql`
-    query($slug: String!) {
+    query ProjectBySlug($slug: String!) {
         markdownRemark(frontmatter: {slug: {eq: $slug} }) {
             html
             frontmatter {
@@ -29,23 +29,23 @@ export const pageQuery = graphql`
     }
 `
 
-
-
 const ProjectTemplate = ({data}) => {
-    // const project = data.projectsJson;
-    // const title = project.title; 
-    // const description = project.description;
-    // const imageData = project.image.childImageSharp.fluid; 
-    
+    const { markdownRemark } = data;
+    const { frontmatter, html } = markdownRemark
+  
+    console.log(data)
     return (
-        <Layout>
-            You're in projet profile!
-            {/* <ProjectProfile
-                title = {title}
-                description = {description}
-                imageData = {imageData}
-                html = {html}
-            /> */}
+        <Layout
+            pageTitle = {frontmatter.title}
+        >
+            <div className={styles.projectContainer}>
+            
+                <Image className = {styles.featuredImage} fluid = {frontmatter.featuredImage.childImageSharp.fluid}/>
+                <div
+                    className={styles.projectContent}
+                    dangerouslySetInnerHTML={{ __html: html }}
+                />
+            </div>
         </Layout>
     )
 }

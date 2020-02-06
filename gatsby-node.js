@@ -65,6 +65,9 @@
                         fields {
                             slug
                         }
+                        frontmatter {
+                            slug
+                        }
                     }
                 }
             }
@@ -72,11 +75,13 @@
         console.log(JSON.stringify(result, null, 4))
 
         result.data.allMarkdownRemark.edges.forEach(({node}) => {
+            console.log("SLUG PASSED: ")
+            console.log(node.fields.slug)
             createPage({
                 path: node.fields.slug, 
                 component: path.resolve(`./src/templates/project.js`), 
                 context: {
-                    slug: node.fields.slug
+                    slug: node.frontmatter.slug
                 }
             })
         })

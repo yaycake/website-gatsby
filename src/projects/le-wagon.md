@@ -1,6 +1,6 @@
 ---
 title: Le Wagon China
-slug: le-wagon-china
+slug: le-wagon
 author: Grace Yang
 date: 2020-01-02
 featuredImage: ../images/hk.jpg

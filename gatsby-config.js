@@ -11,6 +11,12 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-transformer-remark',
     {
+      resolve: 'gatsby-plugin-typography', 
+      options: {
+        pathToConfigModule: 'src/utils/typography',
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: 'project', 

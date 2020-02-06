@@ -15,7 +15,7 @@ import "./layout.css"
 
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageTitle }) => {
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -30,6 +30,7 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
+  <h1 className = "pageTitle">{pageTitle}</h1>
       {/* <div
         style={{
           margin: `0 auto`,

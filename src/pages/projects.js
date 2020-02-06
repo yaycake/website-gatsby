@@ -112,8 +112,10 @@ const ProjectsPage = () => {
     }
 
     return (
-        <Layout>
-            <h1 className={styles.projectHeader}>DESIGN &amp; CODE</h1>
+        <Layout
+          pageTitle="Design &amp; Code"
+        >
+            {/* <h1 className={styles.projectHeader}>DESIGN &amp; CODE</h1> */}
            
             <div className = {styles.viewOptions}>
               <div className = {styles.viewToggle}/>
