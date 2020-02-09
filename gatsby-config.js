@@ -11,6 +11,19 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-transformer-remark',
     {
+      resolve: `gatsby-transformer-remark`, 
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`, 
+            options: {
+              maxWidth:500,
+            }
+          }
+        ]
+      }
+    },
+    {
       resolve: 'gatsby-plugin-typography', 
       options: {
         pathToConfigModule: 'src/utils/typography',

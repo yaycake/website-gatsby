@@ -19,7 +19,7 @@ h4 {
     justify-content: space-between;
     cursor: pointer;
     text-transform: uppercase;
-    font-weight: lighter;
+    font-weight: lighten;
     letter-spacing: 1px;
     margin: 0 auto; 
     padding: 120px 0px;

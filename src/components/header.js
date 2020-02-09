@@ -8,7 +8,11 @@ const Header = ({ siteTitle }) => (
   <header className = {styles.Header}>
     <div className = {styles.logo}>
       <Link className = {styles.logoLink} to="/">
-        <h1>G/Y</h1>
+        <h1> 
+          <span>G</span> 
+          <span className={styles.slash}>/</span>
+          <span>Y</span>  
+        </h1>
       </Link>
     </div>
     <MenuToggle/>

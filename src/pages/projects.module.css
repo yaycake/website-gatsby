@@ -17,9 +17,9 @@
     
     display: flex; 
     align-items: center;
-    justify-content: center; 
-    justify-items: center;
-    margin: 40px 0
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto
 }
 
 .viewToggle { 

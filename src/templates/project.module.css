@@ -3,6 +3,34 @@
     margin: 0 auto; 
 }
 
+.projectContent > h3 {
+    font-weight: normal; 
+
+    font-size: 20px; 
+}
+
 .featuredImage {
     margin-bottom: 40px; 
 }
+
+.projectSummary  {
+
+    font-size: 14px; 
+}
+
+.projectSummary > div {
+    margin: 16px 
+}
+
+.projectContent> ul {
+    list-style: none;
+}
+
+.bolder {
+    font-weight: bold; 
+}
+
+.line { 
+    margin-top: calc(1.45rem - 1px);
+}
+

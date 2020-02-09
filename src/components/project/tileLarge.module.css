@@ -15,10 +15,11 @@
 
 .tileLarge_type {
     font-size: 14px; 
-    font-weight: normal;
+    font-weight: lighten;
     padding-top: 4px; 
     text-align: right; 
     text-transform: uppercase;
+
 }
 
 .tileLarge_image {

@@ -45,6 +45,15 @@ const ProjectTemplate = ({data}) => {
                     className={styles.projectContent}
                     dangerouslySetInnerHTML={{ __html: html }}
                 />
+                
+                <hr className={styles.line}/>
+                    <div className = {styles.projectSummary}>
+                        <div> <span className={styles.bolder}>Product Type:</span> {frontmatter.projectType}</div>
+                        <div> <span className={styles.bolder}>Contribution:</span> {frontmatter.contributions}</div>
+                        <div> <span className={styles.bolder}>Skills:</span> {frontmatter.skills}</div>
+                        <div> <span className={styles.bolder}>Engagement Period:</span> {frontmatter.engagementPeriod}</div>
+                    </div>
+                <hr className={styles.line}/>
             </div>
         </Layout>
     )
