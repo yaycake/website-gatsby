@@ -3,9 +3,25 @@
     flex-direction: row; 
     justify-content: space-between;
     padding: 32px;
+    
 }
 .logoLink {
     text-decoration: none; 
     color: black; 
     cursor: pointer;
+    
+}
+
+.logoLink > h1 {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.logoLink >h1 > span {
+    padding: 4px;
+}
+.slash {
+    font-size: 32px;
+    opacity: .8
 }

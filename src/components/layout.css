@@ -42,6 +42,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  cursor: pointer
 }
 a:active,
 a:hover {
@@ -185,7 +186,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  /* font: 112.5%/1.45em georgia, serif; */
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -200,7 +201,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  /* font-family: georgia, serif; */
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -625,5 +626,15 @@ pre tt:after {
   border: 2px dashed yellow;
   width: 100%;
   height: 100%; 
-  padding: 0 32px;
+}
+
+.pageTitle {
+  margin: auto; 
+  height: 2.25rem;
+  text-align: center;
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 40px; 
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }

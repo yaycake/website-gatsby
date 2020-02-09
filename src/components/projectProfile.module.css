@@ -1,3 +1,21 @@
 .projectContent {
-    border: 1px solid purple
+    /* border: 1px solid purple; */
+    grid-column: 2;
+    margin-left: 20px; 
+    margin-right: 40px;
+}
+
+.featuredImage {
+    margin-bottom: 32px; 
+    border-radius: 4px; 
+}
+
+.bolder {
+    font-weight: bold; 
+    /* font-size: 14px;  */
+}
+.projectFooter > div {
+    font-size: 14px;
+    padding: 14px 18px;
+
 }
