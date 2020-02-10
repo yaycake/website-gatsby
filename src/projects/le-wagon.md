@@ -3,12 +3,13 @@ title: Le Wagon China
 slug: le-wagon
 author: Grace Yang
 date: 2020-01-02
+description: Product design sprint lead and front-end development teacher for top-ranked fullstack bootcamp. 
 featuredImage: ../images/lebanner.png
 projectType: Product design sprints, technical workshops, WeChat Mini Programs
 contributions: Front-end development, student mentorships
 skills: HTML, CSS, Javascript, product design sprint, Sketch, Figma, Invision, project prototyping
 url: http://www.lewagon.com
-engagementPeriod: February 2020 to April 2030
+engagementPeriod: October 2017 - November 2018
 reel: https://youtu.be/65qa8VihQI0
 ---
 
@@ -22,7 +23,7 @@ Le Wagon is a globally ranked #1 coding bootcamp; I became involved with Le Wago
 
 I taught the first product design sprint for the very first batch of students in Chengdu in 2017, covering product development, creating user stories, zoning & mockups in Sketch, and prototyping with Invision and/or Marvel.
 
->### Le Wagon is ranked the #1 coding school on Switchup.org
+> Le Wagon is ranked the #1 coding school on Switchup.org
 
 ![demoday](../images/le_5.png)
 

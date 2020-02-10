@@ -16,7 +16,11 @@
 .projectContent > blockquote {
     border-left: 2px solid black;
     padding-left: 1.45rem;
-    margin: 30px
+
+    letter-spacing: 1px;
+
+    padding: 20px;
+    margin: 32px 0!important;
 }
 
 .featuredImage {

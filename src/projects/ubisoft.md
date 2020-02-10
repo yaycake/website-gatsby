@@ -7,7 +7,7 @@ featuredImage: ../images/ubibanner.png
 projectType: Curriculumn, Mentorship
 contributions: Curriculum, development, product workshops, design sprints
 skills: HTML, CSS, Javascript, product design sprint, Sketch, Figma
-engagementPeriod: February 2020 to April 2030
+engagementPeriod: July 2018 - August 2018
 ---
 
 ### Ubisoft Shanghai
