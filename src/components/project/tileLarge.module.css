@@ -1,28 +1,56 @@
 .tileLarge {
-    position: relative;
-    display: flex;
-    flex-direction: column; 
-
-    min-width: 250px; 
-    min-height: 250px; 
-
+    margin: 20px; 
+    min-width: 150px; 
+    min-height: 150px; 
     text-decoration: none; 
-    box-shadow: 2px 2px 4px rgba(0,0,0,.2);
-    color: black;
+    position: relative; 
+    color: white;
     letter-spacing: 1.5px;
+    background-color: white
+}
+
+.tileLarge:hover {
+    /* box-shadow: 2px 2px 4px rgba(0,0,0,.2); */
+}
+
+.tileLarge > .tileLarge_image {
+    /* border-radius: 50%; */
+   
+}
+.tileLarge:hover > .tileLarge_image {
+    mix-blend-mode: difference;
+    opacity: .25
+}
+
+.tileLarge:hover > .tileLarge_title {
+    display: flex; 
+    mix-blend-mode: multiply
 }
 
 .tileLarge_title {
-    font-weight: normal;
-    font-size: 20px;
-    margin: auto 24px;
+    font-weight: bolder;
+    font-size: 12px;
+
+    display: none; 
+   
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    z-index: 3;
+    letter-spacing: .75px;
     text-transform: uppercase;
-    
-    border: 2px solid blue; 
+    color: black;
+    border: 2px solid green;
 }
 
 .tileLarge_type {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: lighten;
     padding-top: 4px; 
 
@@ -32,15 +60,23 @@
 }
 
 .tileLarge_image {
-    max-width: 500px;
-    max-height: 300px;
     box-shadow: 2px 2px 4px rgba(0,0,0,.2)
 }
 
 .tileLarge_image > div > picture > img {
     object-position: top;
+    position: relative;
+    margin: 0!important
 } 
 
 .tileLarge > img {
-    object-position: top
+    object-position: top;
+    position: relative;
+    margin: 0!important
+}
+
+.tileLarge_image > div {
+    width: 150px;
+    height: 150px;
+    padding-bottom: 0
 }

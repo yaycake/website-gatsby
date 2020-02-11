@@ -1,6 +1,11 @@
 .projectContainer {
-   
-    /* padding-left: 80px; */
+
+    max-width: 600px;
+    margin: auto;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
  
 }
 
@@ -14,7 +19,6 @@
 }
 
 .viewOptions { 
-    
     display: flex; 
     align-items: center;
     justify-content: space-between;

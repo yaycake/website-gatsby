@@ -10,6 +10,7 @@ import ScrollMenu from '../components/UI/scrollMenu'
 import styles from './projects.module.css'
 import "../components/layout.css"
 import TileLarge from '../components/project/tileLarge'
+import PageTile from '../components/pageTile'
 
 const ProjectsPage = () => {
 
@@ -123,20 +124,27 @@ const ProjectsPage = () => {
     }
 
     return (
-        <Layout
-          pageTitle="Design &amp; Code"
-        >
-            {/* <h1 className={styles.projectHeader}>DESIGN &amp; CODE</h1> */}
+        <Layout pageTitle="Design &amp; Code">
            
-            <div className = {styles.viewOptions}>
+            {/* <div className = {styles.viewOptions}>
               <div className = {styles.viewToggle}/>
               <div className = {styles.viewToggle}/>
               <div className = {styles.viewToggle}/>
               <div className = {styles.viewToggle}/>
               <div className = {styles.viewToggle}/>
-           </div>
+            </div> */}
             
             <div className = {styles.projectContainer}>
+              
+
+              <PageTile 
+                title = "Grace Yang"
+                slug = "/"
+              />
+              <PageTile 
+                title = "Design &amp; Code"
+                slug = "/"
+              />
 
               { projects.map(({node: project}) => {
 
@@ -156,10 +164,29 @@ const ProjectsPage = () => {
                       projectType = {projectType}
                       featuredImage = {featuredImageData}
                     /> 
-              
+
                 )
-              })
-            }
+                })
+              }
+
+              <PageTile 
+                title = "Skills &amp; Services"
+                slug = "/"
+              />
+
+              <PageTile 
+                title = "Github"
+                slug = "/"
+              />
+
+              <PageTile 
+                title = "LinkedIn"
+                slug = "/"
+              />
+              <PageTile 
+                title = "Email"
+                slug = "/"
+              />       
 
 
             {/* {
@@ -203,7 +230,7 @@ const ProjectsPage = () => {
                 )
               }) */}
 
-            }
+            
           </div>
 
         </Layout>
