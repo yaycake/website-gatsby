@@ -30,3 +30,11 @@
     margin:16px;
   
 }
+
+.projectRow {
+    display: flex;
+    /* display: grid;  */
+    /* grid-template-columns: repeat(3,1fr); */
+    height: 300px;
+    justify-content: center;
+}

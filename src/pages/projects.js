@@ -13,64 +13,75 @@ import TileLarge from '../components/project/tileLarge'
 
 const ProjectsPage = () => {
 
-    // useEffect( () => {
-    //   setCurrProject({
-    //     title: 
-    //   })
-    // }, [])
-
-    const data = useStaticQuery(graphql`
-      {
-        allMarkdownRemark {
-          edges {
-            node {
-              html
-              headings {
-                depth
-                value
-              }
-              frontmatter {
-                title
-                author
-                date
-                slug
-                featuredImage {
-                  childImageSharp {
-                    fluid(maxWidth: 800) {
-                      ...GatsbyImageSharpFluid
-                    }
+  const data = useStaticQuery(graphql`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            html
+            headings {
+              depth
+              value
+            }
+            frontmatter {
+              title
+              author
+              date
+              slug
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
-                projectType
-                contributions
-                skills
-                engagementPeriod
               }
+              projectType
+              contributions
+              skills
+              engagementPeriod
             }
           }
         }
       }
-    `)
+    }
+  `)
 
-    const projects = data.allMarkdownRemark.edges;
+  const projects = data.allMarkdownRemark.edges;
 
-    console.log("PROJECTS: ")
+  console.log("data.allMarkDownRemark")
 
-    console.log(projects)
+  console.log(data.allMarkdownRemark)
 
-    console.log(projects[0].node)
+  console.log("Projects: ")
+  console.log(projects)
+  
+   
+  // chunkify projects Array 
 
-    const [currProject, setCurrProject] = useState({
-      id: projects[0].node.id, 
-      title: projects[0].node.frontmatter.title,
-      slug: projects[0].node.frontmatter.slug,
-      featuredImageData: projects[0].node.frontmatter.featuredImage.childImageSharp.fluid, 
-      html: projects[0].node.html, 
-      projectType: projects[0].node.frontmatter.projectType, 
-      contributions: projects[0].node.frontmatter.contributions, 
-      skills: projects[0].node.frontmatter.skills, 
-      engagementPeriod: projects[0].node.frontmatter.engagementPeriod
-    })
+  // const projectsCopy = projects; 
+
+  // const projectArray = [];
+
+  // while (projects.length > 3 ){
+  //   projectArray.push(projectsCopy.splice(0,3))
+  // }
+
+  // console.log("projectArray: ")
+
+  // console.log(projectArray)
+ 
+
+  const [currProject, setCurrProject] = useState({
+    id: projects[0].node.id, 
+    title: projects[0].node.frontmatter.title,
+    slug: projects[0].node.frontmatter.slug,
+    featuredImageData: projects[0].node.frontmatter.featuredImage.childImageSharp.fluid, 
+    html: projects[0].node.html, 
+    projectType: projects[0].node.frontmatter.projectType, 
+    contributions: projects[0].node.frontmatter.contributions, 
+    skills: projects[0].node.frontmatter.skills, 
+    engagementPeriod: projects[0].node.frontmatter.engagementPeriod
+  })
 
     // Create Title Array for ScrollMenu Component
     let titleArray = [];
@@ -126,42 +137,73 @@ const ProjectsPage = () => {
            </div>
             
             <div className = {styles.projectContainer}>
-              {/* <ScrollMenu 
-                array = {titleArray} 
-                selectProject = {selectProjectHandler}
-                activeProject = {currProject.id}
-              /> 
 
-              <ProjectProfile
-                title = {currProject.title}
-                slug = {currProject.slug}
-                featuredImage = {currProject.featuredImageData}
-                html = {currProject.html}
+              { projects.map(({node: project}) => {
 
-                projectType = {currProject.projectType}
-                contributions = {currProject.contributions}
-                skills = {currProject.skills}
-                engagementPeriod = {currProject.engagementPeriod}
-
-              />
-            </div> */}
-                      
-            { projects.map(({ node: project }) => {
                 const id = project.id;
                 const title = project.frontmatter.title; 
                 const slug = project.frontmatter.slug; 
                 const featuredImageData = project.frontmatter.featuredImage.childImageSharp.fluid;
                 const projectType = project.frontmatter.projectType
+
                 return (
+                  
                     <TileLarge
                       key = {id}
+                      projectId = {id}
                       title = {title}
                       slug = {slug}
                       projectType = {projectType}
                       featuredImage = {featuredImageData}
                     /> 
+              
                 )
-            })}
+              })
+            }
+
+
+            {/* {
+              projectArray.map( (chunk, index) => {
+                
+                console.log("Chunk: " )
+                console.log(chunk)
+                console.log(index)
+
+                return (
+
+                  <div 
+                    key = {index} 
+                    className = {styles.projectRow}>
+                    {
+                      chunk.map( project => {
+                        console.log("In Chunk, node: ")
+                        console.log(project.node)
+                        
+                        const id = project.node.id;
+                        const title = project.node.frontmatter.title; 
+                        const slug = project.node.frontmatter.slug; 
+                        const featuredImageData = project.node.frontmatter.featuredImage.childImageSharp.fluid;
+                        const projectType = project.node.frontmatter.projectType
+      
+                        return (
+                          
+                            <TileLarge
+                              key = {id}
+                              projectId = {id}
+                              title = {title}
+                              slug = {slug}
+                              projectType = {projectType}
+                              featuredImage = {featuredImageData}
+                            /> 
+                      
+                        )
+                      })
+                    }
+                    </div>
+                )
+              }) */}
+
+            }
           </div>
 
         </Layout>

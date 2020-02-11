@@ -17,7 +17,7 @@ reel: https://youtu.be/65qa8VihQI0
 
 Le Wagon is a globally ranked #1 coding bootcamp; I became involved with Le Wagon Chengdu as a creative entrepreneur and continue to help grow the community today.
 
-![lewagon_cdu](../images/le_1.png)
+![lewagon_cdu](../images/le_1.png)(#)
 
 ### UX & UI Design Sprints
 
@@ -25,7 +25,7 @@ I taught the first product design sprint for the very first batch of students in
 
 > Le Wagon is ranked the #1 coding school on Switchup.org
 
-![demoday](../images/le_5.png)
+![demoday](../images/le_5.png)(#)
 
 ### Projects & Demo Day
 
@@ -37,13 +37,13 @@ While I myself went on to attend and graduate from the following batch (#114), I
 
 I work with local creative entrepreneurs and software engineers to brainstorm and shape their products.
 
-![ladies_in_tech](../images/le_2.png)
+![ladies_in_tech](../images/le_2.png)(#)
 
 ### Ladies in Tech
 
 An open and public Women's Day event produced by both Le Wagon and the French Embassy in Chengdu, we looked at the opportunities women have to participate in shaping the future and workshopped product ideas in small groups.
 
-![teach](../images/le_4.png)
+![teach](../images/le_4.png)(#)
 
 ### High School Tech Bootcamp
 
@@ -51,7 +51,7 @@ Taught product design and front-end development to a small group of high school 
 
 ### Coverage
 
-![asiaintech](../images/le_6.jpeg)
+![asiaintech](../images/le_6.jpeg)(#)
 
 <a href="http://www.atpstories.com/in-the-making-with-thibault-and-grace-le-wagon-nsh4/" target="_blank" rel="noopener">Asia Tech Podcast</a>
 

@@ -1,28 +1,46 @@
 .tileLarge {
+    position: relative;
     display: flex;
     flex-direction: column; 
-    margin: 40px auto;
-    max-width: 500px;
+
+    min-width: 250px; 
+    min-height: 250px; 
+
     text-decoration: none; 
+    box-shadow: 2px 2px 4px rgba(0,0,0,.2);
     color: black;
-    letter-spacing: .75px
+    letter-spacing: 1.5px;
 }
+
 .tileLarge_title {
-    font-size: 20px; 
+    font-weight: normal;
+    font-size: 20px;
+    margin: auto 24px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    
+    border: 2px solid blue; 
 }
 
 .tileLarge_type {
-    font-size: 14px; 
+    font-size: 12px;
     font-weight: lighten;
     padding-top: 4px; 
-    text-align: right; 
+
     text-transform: uppercase;
 
+    display: none;
 }
 
 .tileLarge_image {
     max-width: 500px;
     max-height: 300px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.2)
+}
+
+.tileLarge_image > div > picture > img {
+    object-position: top;
+} 
+
+.tileLarge > img {
+    object-position: top
 }
