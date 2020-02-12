@@ -16,8 +16,8 @@ const Header = ({ siteTitle }) => (
       </Link>
     </div>
     <div className= {styles.headerLinks}>
-      <div> About Me </div>
-      <div> Resume </div>
+      <div className ={styles.aboutLink}> <Link to="./about">About Me</Link> </div>
+      <div className={styles.resumeLink}> <Link to ="./resume">Resume </Link></div>
     </div>
     {/* <MenuToggle/> */}
   </header>

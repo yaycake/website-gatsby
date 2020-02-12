@@ -3,6 +3,12 @@
     margin: 0 auto; 
 }
 
+.projectDescription {
+    font-size: 20px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid 4px;
+}
+
 .projectContent > h3 {
     font-weight: normal; 
 
@@ -29,11 +35,10 @@
 
 .projectSummary  {
 
-    font-size: 14px; 
 }
 
 .projectSummary > div {
-    margin: 16px 
+    margin: 16px 0 
 }
 
 .projectContent> ul {

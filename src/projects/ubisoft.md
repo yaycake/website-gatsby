@@ -3,6 +3,8 @@ title: Ubisoft
 slug: ubisoft
 author: Grace Yang
 date: 2020-01-01 
+
+description: A WeChat Mini Program app guide and social platform for Ubisoft's community at ChinaJoy, Asia's largest gaming convention.
 featuredImage: ../images/ubibanner.png
 projectType: Curriculumn, Mentorship
 contributions: Curriculum, development, product workshops, design sprints
@@ -21,7 +23,7 @@ WeChat is the social, financial, and cultural infrastructure that everyday China
 
 With the advent of WeChat Mini Programs, Ubisoft Shanghai shared a vision of a community united through the excitement and passion of China Joy.
 
-![ubisoft_cj](../images/ubi_cj.jpg)(#)
+![ubisoft_cj](../images/ubi_cj.jpg)
 
 ### The User Stories
 
@@ -29,29 +31,29 @@ Users would be able to book demos, enter in lucky draw lotteries for limited edi
 
 As for Ubisoft Shanghai, they would be able to collect information on attendees, and be able to reach out and connect the China community to their official WeChat page.
 
-![ubisoft_lucky](../images/ubi_lucky.jpg)(#)
+![ubisoft_lucky](../images/ubi_lucky.jpg)
 
->##"In the gaming mega-brand’s first-ever ChinaJoy Mini Program, fans can participate in all aspects of the Ubisoft ChinaJoy experience"
+>###"In the gaming mega-brand’s first-ever ChinaJoy Mini Program, fans can participate in all aspects of the Ubisoft ChinaJoy experience"
 >
->##_WeChat Global_
+>####_WeChat Global_
 
 ### The Process
 
 I worked with the Ubisoft Shanghai creative, marketing, and mobile development teams to draft UX workflows, design UI elements, and provide some front-end consulting for the WeChat framework.
 
-![ubisoft_ui](../images/ubi_ui.jpg)(#)
+![ubisoft_ui](../images/ubi_ui.jpg)
 
 ### The Deliverables
 
 I provided a full PDF UX map with labelled Sketch artboards & 3 edit rounds. I also provided all UI components and unique graphics specific to the Mini Program (i.e. icons for each of Ubisoft's games, the lucky draw backdrop).
 
-![ubisoft_icons](../images/ubi_icons.jpg)(#)
+![ubisoft_icons](../images/ubi_icons.jpg)
 
 ### Try It
 
 While the mini program is in 'post-event' mode, you can still check out the newsfeed for this past year's China Joy. Scan the QR code below through WeChat.
 
-![ubisoft_wechat](../images/ubi_wechatqr.jpg)(#)
+![ubisoft_wechat](../images/ubi_wechatqr.jpg)
 
 ### Coverage
 

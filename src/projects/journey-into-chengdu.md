@@ -4,7 +4,7 @@ slug: journey-into-chengdu
 author: Grace Yang
 date: 2020-01-10
 featuredImage: ../images/joubanner.png
-description:  A WeChat Mini Program game to break free of your commute and explore Chengdu.
+description:  A WeChat Mini Program game to break free of your commute and unlock Chengdu.
 projectType: WeChat Mini Program, hackathon
 contributions:  UX/UI design, front-end development
 skills: WeChat MINA (WXML, WXSS), Javascript, Sketch
@@ -18,9 +18,9 @@ reel: https://www.youtube.com/embed/jNQcDpv_7ao
 
 Dan Engel, Steve Jackson, and I make up the 'Code Daddies' team. Steve received the award for our team.
 
-![fcchackathon](../images/journey_1.png)(#)
+![fcchackathon](../images/journey_1.png)
 
-![steve](../images/journey_8.jpeg)(#)
+![steve](../images/journey_8.jpeg)
 
 ### The Opportunity
 
@@ -28,17 +28,17 @@ We applied the ['fog of war'](https://en.wikipedia.org/wiki/Fog_of_war#In_video_
 
 After all, the city is much bigger than the small community bubbles we find ourselves in.
 
-![explore](../images/journey_3.png)(#)
+![explore](../images/journey_3.png)
 
-![my_commute](../images/journey_2.png)(#)
+![my_commute](../images/journey_2.png)
 
 ### Designing Journey Into Chengdu
 
 Icons and achievement badges were created to make a map experience more game like. We could not implement the original inspiration of a 'fog of war' look and feel due to the time and tech constraints.
 
-![tourist_foreigner](../images/journey_4.png)(#)
+![tourist_foreigner](../images/journey_4.png)
 
-![panda_boss](../images/journey_5.png)(#)
+![panda_boss](../images/journey_5.png)
 
 ### Building It
 
@@ -54,9 +54,9 @@ Tencent maps didn't have an easy way to gridify or customize the map experience 
 
 Storing the data became cumbersome, because the database would have to record and store a user's movement until perpetuity.
 
-![locked](../images/journey_6.png)(#)
+![locked](../images/journey_6.png)
 
-![unlocked](../images/journey_7.png)(#)
+![unlocked](../images/journey_7.png)
 
 ### Coverage
 

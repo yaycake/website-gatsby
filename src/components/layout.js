@@ -22,7 +22,7 @@ const Layout = ({ children, pageTitle }) => {
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
       
-        {pageTitle ? <h1 className = "pageTitle">{pageTitle}</h1> : null}
+        {pageTitle ? <div className = "pageTitle">{pageTitle}</div> : null}
 
         <main className = "mainContent">
           {children}

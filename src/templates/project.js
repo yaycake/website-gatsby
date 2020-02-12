@@ -13,6 +13,7 @@ export const pageQuery = graphql`
                 author
                 date
                 slug
+                description
                 featuredImage {
                   childImageSharp {
                     fluid(maxWidth: 800) {
@@ -39,6 +40,7 @@ const ProjectTemplate = ({data}) => {
             pageTitle = {frontmatter.title}
         >
             <div className={styles.projectContainer}>
+                <div className = {styles.projectDescription}>{frontmatter.description}</div>
             
                 <Image className = {styles.featuredImage} fluid = {frontmatter.featuredImage.childImageSharp.fluid}/>
                 <div

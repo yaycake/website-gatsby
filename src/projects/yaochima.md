@@ -4,11 +4,12 @@ slug: yaochima
 author: Grace Yang
 date: 2020-01-02
 featuredImage: ../images/yaobanner.png
-projectType: WeChat Mini Program
+description: A WeChat Mini Program to help you find new restaurants in the neighborhood.
+projectType: WeChat Mini Program mobile application
 contributions: Product development, UX/UI design, front-end development
 skills: HTML, CSS, Javascript, product design sprint, Sketch, Figma, Invision, WeChat MINA (WXML, WXSS)
 url: http://www.lewagon.com/chengdu
-engagementPeriod: February 2020 to April 2030
+engagementPeriod: November 2018 to December 2018
 reel: https://www.youtube.com/embed/eYaEUeVMWH0
 
 ---

@@ -635,11 +635,10 @@ pre tt:after {
 
 .pageTitle {
   margin: auto; 
-  height: 2.25rem;
   text-align: center;
   font-weight: normal;
-  font-size: 28px;
-  margin-bottom: 40px; 
+  font-size: 24px;
+  /* margin-bottom: 40px;  */
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: .5px;
 }

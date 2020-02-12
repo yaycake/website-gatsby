@@ -3,7 +3,7 @@ title: JS Power
 slug: jspower
 author: Grace Yang
 date: 2020-01-10
-description: Digital marketing, international branding strategy, and website design & development.
+description: Digital marketing, international branding strategy, and website design & development for an industrial manufacturing company.
 featuredImage: ../images/jspowerbanner.png
 projectType: Website design, development, branding
 contributions: HTML, CSS, Javascript, UX/UI design, brand strategy, digital marketing, internationalization
