@@ -8,14 +8,18 @@ const Header = ({ siteTitle }) => (
   <header className = {styles.Header}>
     <div className = {styles.logo}>
       <Link className = {styles.logoLink} to="/">
-        <h1> 
-          <span>G</span> 
+        
+          <span className = {styles.g}>G</span> 
           <span className={styles.slash}>/</span>
-          <span>Y</span>  
-        </h1>
+          <span className = {styles.y}>Y</span>  
+  
       </Link>
     </div>
-    <MenuToggle/>
+    <div className= {styles.headerLinks}>
+      <div> About Me </div>
+      <div> Resume </div>
+    </div>
+    {/* <MenuToggle/> */}
   </header>
 )
 

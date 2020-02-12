@@ -137,14 +137,14 @@ const ProjectsPage = () => {
             <div className = {styles.projectContainer}>
               
 
-              <PageTile 
+              {/* <PageTile 
                 title = "Grace Yang"
                 slug = "/"
               />
               <PageTile 
                 title = "Design &amp; Code"
                 slug = "/"
-              />
+              /> */}
 
               { projects.map(({node: project}) => {
 
@@ -169,7 +169,7 @@ const ProjectsPage = () => {
                 })
               }
 
-              <PageTile 
+              {/* <PageTile 
                 title = "Skills &amp; Services"
                 slug = "/"
               />
@@ -186,49 +186,7 @@ const ProjectsPage = () => {
               <PageTile 
                 title = "Email"
                 slug = "/"
-              />       
-
-
-            {/* {
-              projectArray.map( (chunk, index) => {
-                
-                console.log("Chunk: " )
-                console.log(chunk)
-                console.log(index)
-
-                return (
-
-                  <div 
-                    key = {index} 
-                    className = {styles.projectRow}>
-                    {
-                      chunk.map( project => {
-                        console.log("In Chunk, node: ")
-                        console.log(project.node)
-                        
-                        const id = project.node.id;
-                        const title = project.node.frontmatter.title; 
-                        const slug = project.node.frontmatter.slug; 
-                        const featuredImageData = project.node.frontmatter.featuredImage.childImageSharp.fluid;
-                        const projectType = project.node.frontmatter.projectType
-      
-                        return (
-                          
-                            <TileLarge
-                              key = {id}
-                              projectId = {id}
-                              title = {title}
-                              slug = {slug}
-                              projectType = {projectType}
-                              featuredImage = {featuredImageData}
-                            /> 
-                      
-                        )
-                      })
-                    }
-                    </div>
-                )
-              }) */}
+              />        */}
 
             
           </div>

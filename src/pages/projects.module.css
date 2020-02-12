@@ -1,11 +1,11 @@
 .projectContainer {
 
-    max-width: 600px;
+    max-width: 80%;
     margin: auto;
     display: flex; 
     flex-direction: row; 
     flex-wrap: wrap; 
-    justify-content: center;
+    /* justify-content: center; */
  
 }
 

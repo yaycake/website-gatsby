@@ -14,19 +14,57 @@ h4 {
 }
 
 .landingActions {
-    font-size: 36px; 
-    display: flex; 
-    justify-content: space-between;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: lighten;
-    letter-spacing: 1px;
+    font-size: 18px; 
+    letter-spacing: .5px;
     margin: 0 auto; 
-    padding: 120px 0px;
-    height: 70vh;
+    padding: 16px;
+    height: 15vh;
 }
 
+.hello {
+    font-weight: bolder;
+    margin-bottom: 12px;
+}
+.greet {
+    font-weight: lighten;
+}
 
 .previewAction {
     border-bottom: 2px solid rgba(0,0,0,1)
+}
+
+.projectContainer {
+    /* max-width: 80%;
+    margin: auto; */
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+ 
+}
+
+.projectHeader {
+    padding: 16px;
+    margin: auto; 
+    font-weight: bolder;
+    margin-top: 40px; 
+    margin-bottom: 24px; 
+    letter-spacing: 1px;
+    opacity: 8
+}
+
+.viewOptions { 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto
+}
+
+.viewToggle { 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    background-color: black; 
+    margin:16px;
+  
 }

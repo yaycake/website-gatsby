@@ -7,13 +7,15 @@
     flex-direction: row; 
     justify-content: space-between;
     height: 100px; 
-    border:2px dashed pink;
+    /* border:2px dashed pink; */
     align-items: center;
+    font-size: 16px; 
+    letter-spacing: .5px;
 }
 
 .footerContact {
-    letter-spacing: 1px; 
-    text-transform: uppercase
+    /* text-transform: uppercase */
+    font-weight: bolder
 }
 
 .socialFooter {

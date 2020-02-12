@@ -2,26 +2,46 @@
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;
-    padding: 32px;
-    
+    align-items: center;
+    align-content: center;
+    padding: 32px;  
 }
-.logoLink {
+
+.logoLink  {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 18px; 
+    letter-spacing: 1px;
+
     text-decoration: none; 
     color: black; 
     cursor: pointer;
-    
+
+    width: 100px
 }
 
-.logoLink > h1 {
-    font-weight: normal;
-    display: flex;
-    align-items: center;
+
+.logoLink:hover >  .g::after {
+    content: "race";
 }
 
-.logoLink >h1 > span {
+.logoLink:hover > .y::after {
+    content: "ang";
+}
+
+.logoLink > span {
     padding: 4px;
 }
 .slash {
-    font-size: 32px;
-    opacity: .8
+    font-size: 28px;
+    font-weight: lighter;
+    opacity: .5
+}
+
+.headerLinks {
+    display: flex;
+    width: 180px; 
+    justify-content: space-between;
+    margin-right: 8px
 }

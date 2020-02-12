@@ -15,8 +15,8 @@ const Footer = () => (
             <div className = {styles.socialIcon}>Email</div>
         </div>
 
-        <div className = "emailMe">
-            <h3 className = {styles.footerContact}>Contact</h3>
+        <div className = {styles.footerContact}>
+            Contact Me
         </div>
     </div>
 )

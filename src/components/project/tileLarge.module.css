@@ -1,12 +1,14 @@
 .tileLarge {
-    margin: 20px; 
-    min-width: 150px; 
-    min-height: 150px; 
+    margin: 16px; 
+    max-width: 30%; 
+    min-width: 200px;
+    min-height: 200px; 
     text-decoration: none; 
     position: relative; 
     color: white;
     letter-spacing: 1.5px;
-    background-color: white
+    background-color: white;
+   
 }
 
 .tileLarge:hover {
@@ -18,20 +20,29 @@
    
 }
 .tileLarge:hover > .tileLarge_image {
-    mix-blend-mode: difference;
-    opacity: .25
+    mix-blend-mode: multiply;
+    opacity: 1; 
+    filter: grayscale(0%);
+    transform: scale(1.08, 1.08)
 }
 
 .tileLarge:hover > .tileLarge_title {
-    display: flex; 
-    mix-blend-mode: multiply
+    /* display: flex;  */
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    /* mix-blend-mode: multiply */
 }
 
 .tileLarge_title {
-    font-weight: bolder;
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 110%;
 
-    display: none; 
+    text-shadow: 1px 1px 3px rgba(255,255,255,.3);
+
+    display: flex;
    
     position: absolute; 
     top: 0;
@@ -43,10 +54,10 @@
     text-align: center;
     margin: auto;
     z-index: 3;
-    letter-spacing: .75px;
-    text-transform: uppercase;
+    
     color: black;
-    border: 2px solid green;
+    width: 70%;
+
 }
 
 .tileLarge_type {
@@ -60,7 +71,10 @@
 }
 
 .tileLarge_image {
-    box-shadow: 2px 2px 4px rgba(0,0,0,.2)
+    box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    mix-blend-mode: difference;
+    filter: grayscale(100%);
+    opacity: .3
 }
 
 .tileLarge_image > div > picture > img {
@@ -76,7 +90,7 @@
 }
 
 .tileLarge_image > div {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     padding-bottom: 0
 }
