@@ -622,8 +622,14 @@ pre tt:after {
 }
 @media only screen and (max-width: 480px) {
   html {
+
     font-size: 100%;
   }
+}
+
+
+#headerTitle, #headerSubtitle {
+  transition: 1.5s all;
 }
 
 .mainContent {
@@ -643,3 +649,6 @@ pre tt:after {
   letter-spacing: .5px;
 }
 
+.gatsby-resp-image-wrapper{
+  max-width: 100%!important;
+}

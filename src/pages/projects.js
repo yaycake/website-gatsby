@@ -125,26 +125,8 @@ const ProjectsPage = () => {
 
     return (
         <Layout pageTitle="Design &amp; Code">
-           
-            {/* <div className = {styles.viewOptions}>
-              <div className = {styles.viewToggle}/>
-              <div className = {styles.viewToggle}/>
-              <div className = {styles.viewToggle}/>
-              <div className = {styles.viewToggle}/>
-              <div className = {styles.viewToggle}/>
-            </div> */}
             
             <div className = {styles.projectContainer}>
-              
-
-              {/* <PageTile 
-                title = "Grace Yang"
-                slug = "/"
-              />
-              <PageTile 
-                title = "Design &amp; Code"
-                slug = "/"
-              /> */}
 
               { projects.map(({node: project}) => {
 

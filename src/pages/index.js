@@ -26,6 +26,7 @@ const IndexPage = () => {
               author
               date
               slug
+              description
               featuredImage {
                 childImageSharp {
                   fluid(maxWidth: 800) {
@@ -33,8 +34,8 @@ const IndexPage = () => {
                   }
                 }
               }
-              projectType
-              contributions
+           
+              tools
               skills
               engagementPeriod
             }
@@ -54,7 +55,7 @@ const IndexPage = () => {
     slug: projects[0].node.frontmatter.slug,
     featuredImageData: projects[0].node.frontmatter.featuredImage.childImageSharp.fluid, 
     html: projects[0].node.html, 
-    projectType: projects[0].node.frontmatter.projectType, 
+    description: projects[0].node.frontmatter.description, 
     contributions: projects[0].node.frontmatter.contributions, 
     skills: projects[0].node.frontmatter.skills, 
     engagementPeriod: projects[0].node.frontmatter.engagementPeriod
@@ -92,36 +93,36 @@ const IndexPage = () => {
         slug: selectedProject.node.frontmatter.slug, 
         featuredImageData: selectedProject.node.frontmatter.featuredImage.childImageSharp.fluid, 
         html: selectedProject.node.html, 
-        projectType: selectedProject.node.frontmatter.projectType, 
+        description: selectedProject.node.frontmatter.description, 
+        tools: selectedProject.node.frontmatter.tools, 
         contributions: selectedProject.node.frontmatter.contributions, 
         skills: selectedProject.node.frontmatter.skills, 
         engagementPeriod: selectedProject.node.frontmatter.engagementPeriod
       })
     }
 
-
-
   return (
     <Layout>
       <SEO title="Home" />
-      <div className = {styles.landingActions}> 
-      </div>
+      {/* <div className = {styles.landingActions}> 
+      </div> */}
       {/* <div className= {styles.projectHeader}> Recent Work:</div> */}
 
       
       <div className = {styles.projectContainer}>
-        {/* <div className={styles.stripHeader}>
-            Recent Works: 
-          </div> */}
+       
         <div className = {styles.projectStrip}>
        
           { projects.map(({node: project}) => {
+
+            console.log("this project: ")
+            console.log(project)
 
             const id = project.id;
             const title = project.frontmatter.title; 
             const slug = project.frontmatter.slug; 
             const featuredImageData = project.frontmatter.featuredImage.childImageSharp.fluid;
-            const projectType = project.frontmatter.projectType
+            const description = project.frontmatter.description
 
             return (
               
@@ -130,7 +131,7 @@ const IndexPage = () => {
                   projectId = {id}
                   title = {title}
                   slug = {slug}
-                  projectType = {projectType}
+                  description = {description}
                   featuredImage = {featuredImageData}
                 /> 
 

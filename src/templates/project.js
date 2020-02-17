@@ -21,8 +21,7 @@ export const pageQuery = graphql`
                     }
                   }
                 }
-                projectType
-                contributions
+                tools
                 skills
                 engagementPeriod
               }
@@ -31,31 +30,32 @@ export const pageQuery = graphql`
 `
 
 const ProjectTemplate = ({data}) => {
+    
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark
   
     console.log(data)
+
     return (
-        <Layout
-            pageTitle = {frontmatter.title}
-        >
+        <Layout>
             <div className={styles.projectContainer}>
-                <div className = {styles.projectDescription}>{frontmatter.description}</div>
-            
+
+            <div id = "projectIntro" className={styles.projectHeader}>
+                <div id = "thisTitle"  className = {styles.projectTitle}>{frontmatter.title} </div>
+                <div id = "thisDescription" className = {styles.projectDescription}>{frontmatter.description}</div>
+                <div className = {styles.projectSummary}>
+                <div> 
+                    <div className={styles.bolder}>Skills</div> {frontmatter.skills}</div>
+                    <div> <div className={styles.bolder}>Tools</div> {frontmatter.tools}</div>
+                    <div> <div className={styles.bolder}>Engagement Period</div> {frontmatter.engagementPeriod}</div>
+                </div>
+            </div>
+         
                 <Image className = {styles.featuredImage} fluid = {frontmatter.featuredImage.childImageSharp.fluid}/>
                 <div
                     className={styles.projectContent}
                     dangerouslySetInnerHTML={{ __html: html }}
                 />
-                
-                <hr className={styles.line}/>
-                    <div className = {styles.projectSummary}>
-                        <div> <span className={styles.bolder}>Product Type:</span> {frontmatter.projectType}</div>
-                        <div> <span className={styles.bolder}>Contribution:</span> {frontmatter.contributions}</div>
-                        <div> <span className={styles.bolder}>Skills:</span> {frontmatter.skills}</div>
-                        <div> <span className={styles.bolder}>Engagement Period:</span> {frontmatter.engagementPeriod}</div>
-                    </div>
-                <hr className={styles.line}/>
             </div>
         </Layout>
     )

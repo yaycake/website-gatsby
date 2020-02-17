@@ -7,7 +7,8 @@ description: Product design sprint lead and front-end development teacher for a 
 featuredImage: ../images/lebanner.png
 projectType: Product design sprints, technical workshops, WeChat Mini Programs
 contributions: Front-end development, student mentorships
-skills: HTML, CSS, Javascript, product design sprint, Sketch, Figma, Invision, project prototyping
+tools: Sketch, Figma, Invision
+skills: HTML, CSS, Javascript, product design sprint, project prototyping
 url: http://www.lewagon.com
 engagementPeriod: October 2017 - November 2018
 reel: https://youtu.be/65qa8VihQI0

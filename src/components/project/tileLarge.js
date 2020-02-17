@@ -4,7 +4,7 @@ import React from "react"
 import styles from './tileLarge.module.css'
 import Image from 'gatsby-image'
 
-const TileLarge= ({ projectId, title, slug, featuredImage, projectType}) => {
+const TileLarge= ({ projectId, title, slug, featuredImage, description}) => {
     return (
         
         <div className = {styles.tileLarge}>
@@ -12,7 +12,7 @@ const TileLarge= ({ projectId, title, slug, featuredImage, projectType}) => {
                 <Image className = {styles.tileLarge_image} fluid = {featuredImage} alt ={title}/>
                 <div className = {styles.title} > 
                     {title}
-                    <div className = {styles.description}> {projectType}</div>
+                    <div className = {styles.description}> {description}</div>
                 </div>
             </Link>
         </div>

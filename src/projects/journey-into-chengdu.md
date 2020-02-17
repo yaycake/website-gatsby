@@ -4,11 +4,13 @@ slug: journey-into-chengdu
 author: Grace Yang
 date: 2020-01-10
 featuredImage: ../images/joubanner.png
+
 description:  A WeChat Mini Program game to break free of your commute and unlock Chengdu.
-projectType: WeChat Mini Program, hackathon
-contributions:  UX/UI design, front-end development
-skills: WeChat MINA (WXML, WXSS), Javascript, Sketch
+
+skills: UX/UI design, WeChat MINA (WXML, WXSS), Javascript, Sketch
+tools: Sketch, WeChat IDE, Visual Studio Code
 engagementPeriod: February 2020 to April 2030
+
 reel: https://www.youtube.com/embed/jNQcDpv_7ao
 ---
 
