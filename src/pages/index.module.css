@@ -17,12 +17,11 @@ h4 {
     font-size: 18px; 
     letter-spacing: .5px;
     margin: 0 auto; 
-    padding: 16px;
     height: 15vh;
 }
 
 .hello {
-    font-weight: bolder;
+    /* font-weight: bolder; */
     margin-bottom: 12px;
 }
 .greet {
@@ -34,19 +33,32 @@ h4 {
 }
 
 .projectContainer {
-    max-width: 80%; 
-    /* margin: auto; */
-    /* max-width: 60%; */
+    width: 80%;
     display: flex; 
     flex-direction: row; 
     flex-wrap: wrap; 
- 
+    justify-content: right; 
+    margin: auto; 
+
+    overflow-y:scroll;
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-bottom: 40px
 }
 
 .projectContainer > a {
     /* flex-grow: 1 */
 }
 
+
+.projectStrip {
+    /* width: 500px;  */
+    margin-left: auto;
+}
+
+.stripHeader {
+    font-weight: bolder;
+}
 .projectHeader {
     padding: 16px;
     margin: auto; 

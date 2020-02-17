@@ -5,28 +5,49 @@
     align-items: center;
     align-content: center;
     padding: 32px;  
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .logoLink  {
     display: flex;
     align-items: center;
-    font-weight: bolder;
-    font-size: 20px; 
+    /* font-weight: bolder; */
+    /* font-size: 20px;  */
     letter-spacing: 1px;
-
     text-decoration: none; 
     color: black; 
     cursor: pointer;
-
-    width: 100px;
-
-   
+    /* width: 100px; */
+    /* width: 200px; */
+    position: relative;
+    
 }
 
-.g, .y {
-    transition: all 0.3s ease-in-out 0s;
+.logoTitle {
+    font-weight: bolder;
+    font-size: 100px; 
+    letter-spacing: 3px; 
+    /* text-transform: uppercase; */
+
+
+    position: fixed;
+    top: 5%;   
+
+    mix-blend-mode: difference;
+
 }
 
+.subtitle {
+    /* position: absolute;
+    bottom: -16px; */
+    display: block;
+    font-family: "roboto mono";
+    font-size: 32px; 
+    margin-top: 32px;
+    
+}
 
 .logoLink:hover >  .g::after {
     content: "race";
@@ -39,6 +60,7 @@
 .logoLink > span {
     padding: 4px;
 }
+
 .slash {
     font-size: 28px;
     font-weight: lighter;
@@ -82,4 +104,8 @@
 .headerLinks>div>a {
     color: black; 
     text-decoration: none; 
+}
+
+#headerTitle, #headerSubtitle {
+    transition: 1.5s all;
 }

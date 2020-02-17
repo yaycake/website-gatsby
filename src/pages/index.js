@@ -105,43 +105,43 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <div className = {styles.landingActions}> 
-        <div className = {styles.hello}>
-          Hello, I'm Grace. 
-        </div>
-        <div className={styles.greet}>
-          I help turn ideas into products through <strong>user experience + interaction design</strong> &amp; <strong>front-end development.</strong>
-        </div>
       </div>
-      <div className= {styles.projectHeader}> Recent Work:</div>
+      {/* <div className= {styles.projectHeader}> Recent Work:</div> */}
+
+      
       <div className = {styles.projectContainer}>
-        
+        {/* <div className={styles.stripHeader}>
+            Recent Works: 
+          </div> */}
+        <div className = {styles.projectStrip}>
+       
+          { projects.map(({node: project}) => {
 
-              { projects.map(({node: project}) => {
+            const id = project.id;
+            const title = project.frontmatter.title; 
+            const slug = project.frontmatter.slug; 
+            const featuredImageData = project.frontmatter.featuredImage.childImageSharp.fluid;
+            const projectType = project.frontmatter.projectType
 
-                const id = project.id;
-                const title = project.frontmatter.title; 
-                const slug = project.frontmatter.slug; 
-                const featuredImageData = project.frontmatter.featuredImage.childImageSharp.fluid;
-                const projectType = project.frontmatter.projectType
+            return (
+              
+                <TileLarge
+                  key = {id}
+                  projectId = {id}
+                  title = {title}
+                  slug = {slug}
+                  projectType = {projectType}
+                  featuredImage = {featuredImageData}
+                /> 
 
-                return (
-                  
-                    <TileLarge
-                      key = {id}
-                      projectId = {id}
-                      title = {title}
-                      slug = {slug}
-                      projectType = {projectType}
-                      featuredImage = {featuredImageData}
-                    /> 
+            )
+            })
+          }
 
-                )
-                })
-              }
-              {/* <PageTile 
-                title = "Skills &amp; Services"
-                slug = "/"
-              /> */}
+        </div>
+          
+
+             
             
           </div>
 

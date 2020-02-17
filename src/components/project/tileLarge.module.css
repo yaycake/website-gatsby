@@ -1,73 +1,104 @@
 .tileLarge {
-    margin: 16px; 
-    max-width: 30%; 
-    min-width: 200px;
-    min-height: 200px; 
+    margin: 32px; 
+    width: 500px;
+    height: 400px;
     text-decoration: none; 
     position: relative; 
     color: white;
-    letter-spacing: 1.5px;
-    background-color: white;
    
+    background-color: white;
+
+    /* border: 2px solid gold; */
+}
+
+.tileLarge > a  {
+    text-decoration: none; 
+    /* overflow: visible !important */
 }
 
 .tileLarge:hover {
     /* box-shadow: 2px 2px 4px rgba(0,0,0,.2); */
 }
 
-.tileLarge > .tileLarge_image {
-    /* border-radius: 50%; */
-   
+
+.description {
+    display: none;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: .5px;
+    font-weight: normal; 
+    padding-top: 16px;
+    margin: right;
+    width: 50%;
+
+    /* transform: translate(-480px, -135px); */
+
+    text-decoration: none; 
+    color: #1E0B40;
+
+    transition: all 3s; 
+
+    position: absolute;
+    right: 0;
+    top: 52%;
+
+    font-family: "Roboto Mono"
 }
-.tileLarge:hover > .tileLarge_image {
+
+
+.tileLarge:hover > a > .title> .description {
+    display: block;
+    
+
+}
+
+.tileLarge:hover > a > .tileLarge_image {
     mix-blend-mode: multiply;
     opacity: 1; 
     filter: grayscale(0%);
-    transform: scale(1.08, 1.08)
 }
 
-.tileLarge:hover > .tileLarge_title {
-    /* display: flex;  */
+
+.title {
+    /* color: #1E0B40; */
+/* 
+    width: 80%;
+    height: 40%; */
+    /* color: black; */
+
     color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0,0,0,.3);
-    /* mix-blend-mode: multiply */
-}
 
-.tileLarge_title {
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: .5px;
-    line-height: 110%;
-
+    mix-blend-mode: overlay;
+    font-weight: bold; 
+    font-size: 20px;
+    letter-spacing: 1px;
     text-shadow: 1px 1px 3px rgba(0,0,0,.1);
 
-    display: flex;
-   
     position: absolute; 
     top: 0;
     bottom: 0;
     left: 0; 
     right: 0;
+
+    display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     margin: auto;
     z-index: 3;
-    
-    color: black;
-    width: 70%;
 
+    text-shadow: 2px 2px 5px rgba(0,0,0,.2)
 }
 
-.tileLarge_type {
-    font-size: 16px;
-    font-weight: lighten;
-    padding-top: 4px; 
+.tileLarge:hover > a >.title{
+    color: #1E0B40;
+    transform: translateX(-110%);
+    text-align: right; 
 
-    text-transform: uppercase;
+    background-color: white;
 
-    display: none;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0);
+   
 }
 
 .tileLarge_image {
@@ -77,6 +108,9 @@
     opacity: .3
 }
 
+.tileLarge_image > div {
+    padding-bottom: 0!important
+}
 .tileLarge_image > div > picture > img {
     object-position: top;
     position: relative;
@@ -90,7 +124,21 @@
 }
 
 .tileLarge_image > div {
-    width: 200px;
-    height: 200px;
+    width: 600px;
+    height: 400px;
     padding-bottom: 0
 }
+
+
+/* for mobile: */
+
+/* .tileLarge:hover > a > .text {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+
+    transform: translateX(-120%)
+
+   
+} */

@@ -15,9 +15,12 @@ const Footer = () => (
             <div className = {styles.socialIcon}>Email</div>
         </div>
 
-        <div className = {styles.footerContact}>
-            Contact Me
-        </div>
+        <div className= {styles.links}>
+            <Link to="./about">About</Link> 
+            <Link to ="./resume">Resume </Link>
+            <Link to ="./resume">Contact</Link>
+      </div>
+      
     </div>
 )
 

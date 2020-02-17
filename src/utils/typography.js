@@ -5,7 +5,8 @@ const typography = new Typography({
     baseLineHeight: 1.666, 
     headerFontFamily: [
         "Avenir Next", 
-        "sans-serif"
+        "sans-serif", 
+        "Roboto Mono"
     ], 
     bodyFontFamily: ["Helvetica Neue", "sans-serif"]
 })

@@ -7,14 +7,16 @@ import Image from 'gatsby-image'
 const TileLarge= ({ projectId, title, slug, featuredImage, projectType}) => {
     return (
         
-        <Link key = {projectId} className ={styles.tileLarge}to = {`/${slug}/`}>
-           
-            <Image className = {styles.tileLarge_image} fluid = {featuredImage} alt ={title}/>
-            <div className = {styles.tileLarge_title} > 
-                {title}
-            </div>
-            
-        </Link>
+        <div className = {styles.tileLarge}>
+            <Link key = {projectId} className ={styles.link}to = {`/${slug}/`}>
+                <Image className = {styles.tileLarge_image} fluid = {featuredImage} alt ={title}/>
+                <div className = {styles.title} > 
+                    {title}
+                    <div className = {styles.description}> {projectType}</div>
+                </div>
+            </Link>
+        </div>
+      
     )
 }
 
