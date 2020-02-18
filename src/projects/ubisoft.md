@@ -5,11 +5,11 @@ author: Grace Yang
 date: 2020-01-01 
 
 description: A WeChat Mini Program app guide and social platform for Ubisoft's community at ChinaJoy, Asia's largest gaming convention.
-
+tools: Sketch, Figma, WeChat IDE
 featuredImage: ../images/ubibanner.png
 projectType: Curriculumn, Mentorship
 contributions: Curriculum, development, product workshops, design sprints
-skills: HTML, CSS, Javascript, product design sprint, Sketch, Figma
+skills: HTML, CSS, Javascript, product design sprint
 engagementPeriod: July 2018 - August 2018
 ---
 

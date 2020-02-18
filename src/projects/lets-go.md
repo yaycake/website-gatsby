@@ -5,9 +5,8 @@ author: Grace Yang
 date: 2020-01-01 
 featuredImage: ../images/ubibanner.png
 description: A vanilla Javascript project to explore and discover our national parks powered by the National Parks, Hiking Project, Mountain Project, OpenWeather, and Google Maps.
-projectType: A Javascript web application
-contributions: Design, development
-skills:  UX/UI design, Javascript, HTML, CSS, Sketch
+tools: Sketch
+skills:  UX/UI design, Javascript, HTML, CSS
 engagementPeriod: October 2019 - November 2019
 ---
 

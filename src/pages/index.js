@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
-import {graphql, useStaticQuery } from 'gatsby'
+
+import {graphql, useStaticQuery, Link } from 'gatsby'
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -44,7 +44,6 @@ const IndexPage = () => {
       }
     }
   `)
-
 
   const projects = data.allMarkdownRemark.edges;
  

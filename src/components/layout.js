@@ -34,16 +34,15 @@ const Layout = ({ children, pageTitle }) => {
   const projectScroll = () => {
     // console.log("in projectScroll")
     if (document.body.scrollTop > 175 || document.documentElement.scrollTop > 175) {
-        console.log("Scrolled to 350")
+        // console.log("Scrolled to 350")
         document.getElementById("projectIntro").style.position = "fixed"
-        document.getElementById("projectIntro").style.left = "23%"
+        document.getElementById("projectIntro").style.left = "24%"
         document.getElementById("projectIntro").style.top = "30vh"
     } else {
-        console.log("else")
-        document.getElementById("projectIntro").style.left = "23%"
+        // console.log("else")
+        document.getElementById("projectIntro").style.left = "24%"
         document.getElementById("projectIntro").style.top = "0px"
         document.getElementById("projectIntro").style.position = "absolute"
-        // document.getElementById(styles.projectIntro).style.backgroundColor = "blue";
     }
 }
 

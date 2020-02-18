@@ -6,8 +6,6 @@ import MenuToggle from './UI/menuToggle'
 
 const Header = ({ siteTitle }) => {
 
-
-
   return ( 
     <header className = {styles.Header}>
       <div className = {styles.logo}>

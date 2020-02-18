@@ -67,22 +67,28 @@
                         }
                         frontmatter {
                             slug
+                            title
                         }
                     }
                 }
             }
-        }`)
-        console.log(JSON.stringify(result, null, 4))
-
-        result.data.allMarkdownRemark.edges.forEach(({node}) => {
-            console.log("SLUG PASSED: ")
-            console.log(node.fields.slug)
-            createPage({
-                path: node.fields.slug, 
-                component: path.resolve(`./src/templates/project.js`), 
-                context: {
-                    slug: node.frontmatter.slug
-                }
+        }`).then(result => {
+            console.log(JSON.stringify(result, null, 4))
+            const projects = result.data.allMarkdownRemark.edges;
+            projects.forEach(({node}, index) => {
+                console.log("SLUG PASSED: ")
+                console.log(node.fields.slug)
+                createPage({
+                    path: node.fields.slug, 
+                    component: path.resolve(`./src/templates/project.js`), 
+                    context: {
+                        slug: node.frontmatter.slug, 
+                        prev: index === 0 ? null : projects[index-1].node,
+                        next: index === (projects.length -1) ? null : projects[index+1].node
+                    }
+                })
             })
+
         })
+        
     }
