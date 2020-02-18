@@ -12,7 +12,6 @@ const Layout = ({ children, pageTitle }) => {
     // console.log("window on scrolll")
     scrollHeader();
     if (document.getElementById("projectIntro")){
-     
       projectScroll();
     }
   };
