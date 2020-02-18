@@ -64,8 +64,8 @@ const ProjectTemplate = ({data, pageContext}) => {
                 />
                    
                 <div className = {styles.projectNav}>
-                    {next && <Link to={next.frontmatter.slug}>&#8592; {next.frontmatter.title}</Link>}
-                    {prev && <Link to={prev.frontmatter.slug}>{prev.frontmatter.title} &#8594;</Link>}
+                    {next && <Link className={styles.navLinks} to={next.frontmatter.slug}>&#8592; {next.frontmatter.title}</Link>}
+                    {prev && <Link className={styles.navLinks} to={prev.frontmatter.slug}>{prev.frontmatter.title} &#8594;</Link>}
                 </div>
 
             </div>

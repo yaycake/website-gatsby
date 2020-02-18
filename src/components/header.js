@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styles from './header.module.css'
-import MenuToggle from './UI/menuToggle'
+// import MenuToggle from './UI/menuToggle'
 
 const Header = ({ siteTitle }) => {
 

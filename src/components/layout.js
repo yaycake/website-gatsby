@@ -1,17 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import {Link} from 'gatsby'
+// import {Link} from 'gatsby'
 import Header from "./header"
 import Footer from './Footer'
 import "./layout.css"
 
 const Layout = ({ children, pageTitle }) => {
-
+ 
   window.onscroll = () => {
     // console.log("window on scrolll")
     scrollHeader();
     if (document.getElementById("projectIntro")){
+     
       projectScroll();
     }
   };

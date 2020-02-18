@@ -1,14 +1,9 @@
-import React, { useState, useEffect } from "react"
-
-import {graphql, useStaticQuery, Link } from 'gatsby'
-
+import React, { useState } from "react"
+import {graphql, useStaticQuery } from 'gatsby'
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import styles from './index.module.css'
 import TileLarge from '../components/project/tileLarge'
-import PageTile from '../components/pageTile'
-import Footer from '../components/Footer'
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -77,37 +72,27 @@ const IndexPage = () => {
     }
 
     // Create Event listener function for ScrollMenu Component
-    const selectProjectHandler = (objId) => {
-      console.log('in selectProjectHandler')
-      console.log(objId)
-  
-      const selectedProject = findProjectHandler(objId)
-        
-      console.log("found?")
-      console.log(selectedProject)
+    // const selectProjectHandler = (objId) => {
 
-      setCurrProject({
-        id: selectedProject.node.id,
-        title: selectedProject.node.frontmatter.title, 
-        slug: selectedProject.node.frontmatter.slug, 
-        featuredImageData: selectedProject.node.frontmatter.featuredImage.childImageSharp.fluid, 
-        html: selectedProject.node.html, 
-        description: selectedProject.node.frontmatter.description, 
-        tools: selectedProject.node.frontmatter.tools, 
-        contributions: selectedProject.node.frontmatter.contributions, 
-        skills: selectedProject.node.frontmatter.skills, 
-        engagementPeriod: selectedProject.node.frontmatter.engagementPeriod
-      })
-    }
+    //   const selectedProject = findProjectHandler(objId)
+
+    //   setCurrProject({
+    //     id: selectedProject.node.id,
+    //     title: selectedProject.node.frontmatter.title, 
+    //     slug: selectedProject.node.frontmatter.slug, 
+    //     featuredImageData: selectedProject.node.frontmatter.featuredImage.childImageSharp.fluid, 
+    //     html: selectedProject.node.html, 
+    //     description: selectedProject.node.frontmatter.description, 
+    //     tools: selectedProject.node.frontmatter.tools, 
+    //     contributions: selectedProject.node.frontmatter.contributions, 
+    //     skills: selectedProject.node.frontmatter.skills, 
+    //     engagementPeriod: selectedProject.node.frontmatter.engagementPeriod
+    //   })
+    // }
 
   return (
     <Layout>
       <SEO title="Home" />
-      {/* <div className = {styles.landingActions}> 
-      </div> */}
-      {/* <div className= {styles.projectHeader}> Recent Work:</div> */}
-
-      
       <div className = {styles.projectContainer}>
        
         <div className = {styles.projectStrip}>
