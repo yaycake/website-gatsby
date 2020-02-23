@@ -1,7 +1,6 @@
 .projectLand {
     height: 45vh; 
     position: relative; 
-    background-color: lightblue
 }
 
 .projectContainer {
@@ -22,7 +21,7 @@
     top: 0; 
     position: absolute;
     /* border: 2px solid blue; */
-    color: black;
+    color: #0E072E;
     /* height: 400px; */
     width: 350px;
     text-align: right;
@@ -31,7 +30,7 @@
 
 #projectIntro {
     transition: 1.5s all;
-    color: black;
+    color:#0E072E;
 }
 
 .projectTitle {
@@ -51,6 +50,7 @@
 
 .projectContent {
     margin-bottom: 80px;
+    color: #0E072E
 }
 
 .projectContent > h3 {
@@ -61,7 +61,6 @@
 .projectContent > h4 {
     font-weight: bold; 
     font-family: "Roboto mono";
-    /* font-size: 20px;  */
     letter-spacing: .5px
 }
 
@@ -75,7 +74,7 @@
 }
 
 .projectContent > blockquote {
-    border-left: 2px solid black;
+    border-left: 2px solid #0E072E;
     padding-left: 1.45rem;
 
     letter-spacing: 1px;
@@ -125,7 +124,7 @@
 
 .projectNav > a {
     text-decoration: none; 
-    color: black; 
+    color: #0E072E; 
     margin: 12px 0
 }
 

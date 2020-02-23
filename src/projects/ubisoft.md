@@ -13,12 +13,12 @@ skills: HTML, CSS, Javascript, product design sprint
 engagementPeriod: July 2018 - August 2018
 ---
 
-### Ubisoft Shanghai
+#### Ubisoft Shanghai
 
 is the second largest Chinese development studio, and Ubisoft 's second largest studio behind Ubisoft Montreal.
 Held annually in Shanghai, China, ChinaJoy or China Digital Entertainment Expo & Conference is a digital entertainment expo is the largest gaming and digital entertainment exhibition held in China and Asia.
 
-> ### ChinaJoy Boasted 340,000 + Visitors From All Over The World
+> #### ChinaJoy Boasted 340,000 + Visitors From All Over The World
 
 WeChat is the social, financial, and cultural infrastructure that everyday China relies on.
 
@@ -26,7 +26,7 @@ With the advent of WeChat Mini Programs, Ubisoft Shanghai shared a vision of a c
 
 ![ubisoft_cj](../images/ubi_cj.jpg)
 
-### The User Stories
+#### The User Stories
 
 Users would be able to book demos, enter in lucky draw lotteries for limited edition prizes, share event posts, or look up and stream scheduled live shows and other events.
 
@@ -34,29 +34,29 @@ As for Ubisoft Shanghai, they would be able to collect information on attendees,
 
 ![ubisoft_lucky](../images/ubi_lucky.jpg)
 
->###"In the gaming mega-brand’s first-ever ChinaJoy Mini Program, fans can participate in all aspects of the Ubisoft ChinaJoy experience"
+>#### "In the gaming mega-brand’s first-ever ChinaJoy Mini Program, fans can participate in all aspects of the Ubisoft ChinaJoy experience"
 >
->####_WeChat Global_
+>##### _WeChat Global_
 
-### The Process
+#### The Process
 
 I worked with the Ubisoft Shanghai creative, marketing, and mobile development teams to draft UX workflows, design UI elements, and provide some front-end consulting for the WeChat framework.
 
 ![ubisoft_ui](../images/ubi_ui.jpg)
 
-### The Deliverables
+#### The Deliverables
 
 I provided a full PDF UX map with labelled Sketch artboards & 3 edit rounds. I also provided all UI components and unique graphics specific to the Mini Program (i.e. icons for each of Ubisoft's games, the lucky draw backdrop).
 
 ![ubisoft_icons](../images/ubi_icons.jpg)
 
-### Try It
+#### Try It
 
 While the mini program is in 'post-event' mode, you can still check out the newsfeed for this past year's China Joy. Scan the QR code below through WeChat.
 
 ![ubisoft_wechat](../images/ubi_wechatqr.jpg)
 
-### Coverage
+#### Coverage
 
 <ul>
 

@@ -43,7 +43,9 @@ const ProjectTemplate = ({data, pageContext}) => {
     console.log(data)
 
     return (
-        <Layout>
+        <Layout
+            isLandingPage = {false}
+        >
             <div className={styles.projectContainer}>
 
                 <div id = "projectIntro" className={styles.projectHeader}>

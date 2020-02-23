@@ -1,11 +1,13 @@
 import React from "react"
 import styles from "./about.module.css"
-import octo from "../images/octopus.png"
+import octoMe from "../images/octopusMe.png"
 import Layout from "../components/layout"
 
 const About = () => {
     return (
-        <Layout>
+        <Layout 
+            isLandingPage = {true}
+        >
             <div className = {styles.aboutContainer}>
                 <div id = "aboutIntro" className={styles.aboutHeader}>
                     <div className = {styles.bolder}> Status</div>
@@ -17,7 +19,7 @@ const About = () => {
                 </div>
 
                 <div className={styles.aboutContent}>
-                   <img className = {styles.aboutImage} src={octo} />
+                   <img className = {styles.aboutImage} src={octoMe} />
 
                 </div>
             </div>

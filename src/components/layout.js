@@ -6,30 +6,49 @@ import Header from "./header"
 import Footer from './Footer'
 import "./layout.css"
 
-const Layout = ({ children, pageTitle }) => {
+const Layout = ({ children, pageTitle, isLandingPage }) => {
  
+  console.log("is Landing Page: ")
+
+  console.log(isLandingPage)
+
   window.onscroll = () => {
-    // console.log("window on scrolll")
-    scrollHeader();
+
+    if (document.getElementById("headerTitle") && isLandingPage){
+      scrollHeader();
+    } else if (!isLandingPage) {
+      noScrollHeader();
+    } else if (!document.getElementById("headerTitle")) {
+      
+    }
+    
     if (document.getElementById("projectIntro")){
       projectScroll();
     }
   };
 
+
   const scrollHeader = () => {
-
-    console.log("scrollHeader")
-
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      document.getElementById("headerTitle").style.fontSize = "32px";
-      document.getElementById("headerSubtitle").style.fontSize = "16px";
-      document.getElementById("headerSubtitle").style.marginTop = "16px";
-    } else {
-      document.getElementById("headerTitle").style.fontSize = "100px";
-      document.getElementById("headerSubtitle").style.fontSize = "32px";
-      document.getElementById("headerSubtitle").style.marginTop = "32px";
-    }
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        console.log("scrollHeader")
+        document.getElementById("headerTitle").style.fontSize = "32px";
+        document.getElementById("headerSubtitle").style.fontSize = "16px";
+        document.getElementById("headerSubtitle").style.marginTop = "16px";
+      }
+       else {
+        document.getElementById("headerTitle").style.fontSize = "100px";
+        document.getElementById("headerSubtitle").style.fontSize = "32px";
+        document.getElementById("headerSubtitle").style.marginTop = "32px";
+      }
+    
   }
+
+  const noScrollHeader = () => {
+    document.getElementById("headerTitle").style.fontSize = "32px";
+    document.getElementById("headerSubtitle").style.fontSize = "16px";
+    document.getElementById("headerSubtitle").style.marginTop = "16px";
+  }
+
 
   const projectScroll = () => {
     // console.log("in projectScroll")

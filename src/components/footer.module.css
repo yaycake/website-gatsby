@@ -52,35 +52,68 @@
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
 
     position: relative
 
 }
 
+.socialFooter > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px; 
+    letter-spacing: .5px; 
+    text-transform: uppercase;
+    text-decoration: none; 
+    color: #0E072E;
+}
+
+
+
 .socialIcon {
-    height: 28px; 
-    width: 28px; 
-    margin: 32px; 
+    height: 32px; 
+    width: 32px; 
+    margin: 0 32px; 
+    margin-bottom: 12px; 
     transition: .5s all
 }
-.socialIcon:hover {
+
+.iconLabel {
+    margin: 0 auto;    
+}
+
+/* .socialIcon:hover {
+    transform: scale(1.2)
+} */
+
+.socialFooter > a:hover >.socialIcon {
     transform: scale(1.2)
 }
+
+.socialFooter > a:hover >.iconLabel {
+    font-weight: bold
+}
+
+
+
 
 .links {
     display: flex;
     flex-direction: column; 
     margin-right: 32px;
     font-weight: bold; 
-    text-align: right;
+    text-align: right
 }
 
 .links > a{
     text-decoration: none;
-    color: #1E0B40;
+    color: #0E072E;
     margin-bottom: 16px;
-    /* position: fixed;
-    right: 0;
+    position: relative;
+    
+    /* right: 0;
     bottom: 0 */
   }
 
@@ -88,3 +121,30 @@
       letter-spacing: 1px; 
       font-weight: bold; 
   }
+
+
+.links > a:before {
+    content: ""; 
+    position: absolute; 
+    width: 95%;
+    height: 2px; 
+    bottom: -4px; 
+    left: 0; 
+    background-color: #0E072E;
+    visibility: hidden;
+    -webkit-transfor: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.links > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.links>div>a {
+    color: #0E072E; 
+    text-decoration: none; 
+}

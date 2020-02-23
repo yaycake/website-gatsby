@@ -17,7 +17,7 @@
     /* font-size: 20px;  */
     letter-spacing: 1px;
     text-decoration: none; 
-    color: black; 
+    color:#0E072E; 
     cursor: pointer;
     /* width: 100px; */
     /* width: 200px; */
@@ -103,7 +103,7 @@
 }
 
 .headerLinks>div>a {
-    color: black; 
+    color: #0E072E; 
     text-decoration: none; 
 }
 

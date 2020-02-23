@@ -1,0 +1,21 @@
+#resumePdf {
+    height: 100vh;
+}
+
+.iframeWrapper {
+    height: 100vh;
+    border:1px solid blue;
+    position: relative; 
+}
+
+iframe {
+    /* margin-top: 60vh; */
+    /* height: 100vh;  */
+    height: 500px;
+    border: 2px dashed orange; 
+
+}
+
+body {
+    height: 100vh;
+}
