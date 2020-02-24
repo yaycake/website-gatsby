@@ -92,7 +92,7 @@ const IndexPage = () => {
 
   return (
     <Layout 
-      isLandingPage = {true}
+      isLandingPage = { true }
     >
       <SEO title="Home" />
       <div className = {styles.projectContainer}>

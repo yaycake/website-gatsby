@@ -1,7 +1,6 @@
 import React from "react"
 import styles from "./about.module.css"
 import resume from '../resume_9_27_19.pdf'
-// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"

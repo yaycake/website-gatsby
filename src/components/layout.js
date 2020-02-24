@@ -7,63 +7,28 @@ import Footer from './Footer'
 import "./layout.css"
 
 const Layout = ({ children, pageTitle, isLandingPage }) => {
- 
-  console.log("is Landing Page: ")
 
-  console.log(isLandingPage)
-
-  window.onscroll = () => {
-
-    if (document.getElementById("headerTitle") && isLandingPage){
-      scrollHeader();
-    } else if (!isLandingPage) {
-      noScrollHeader();
-    } else if (!document.getElementById("headerTitle")) {
-      
-    }
+  // const projectScroll = () => {
+  //   // console.log("in projectScroll")
+  //   if (document.body.scrollTop > 175 || document.documentElement.scrollTop > 175) {
     
-    if (document.getElementById("projectIntro")){
-      projectScroll();
-    }
-  };
+  //       document.getElementById("projectIntro").style.position = "fixed"
+  //       document.getElementById("projectIntro").style.left = "24%"
+  //       document.getElementById("projectIntro").style.top = "30vh"
+  //   } else {
+       
+  //       document.getElementById("projectIntro").style.left = "24%"
+  //       document.getElementById("projectIntro").style.top = "0px"
+  //       document.getElementById("projectIntro").style.position = "absolute"
+  //   }
+  // }
 
+  // if (document.getElementById("projectIntro")){
+  //   projectScroll();
+  // } else {
+  //   console.log("no Project Intro")
+  // }
 
-  const scrollHeader = () => {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        console.log("scrollHeader")
-        document.getElementById("headerTitle").style.fontSize = "32px";
-        document.getElementById("headerSubtitle").style.fontSize = "16px";
-        document.getElementById("headerSubtitle").style.marginTop = "16px";
-      }
-       else {
-        document.getElementById("headerTitle").style.fontSize = "100px";
-        document.getElementById("headerSubtitle").style.fontSize = "32px";
-        document.getElementById("headerSubtitle").style.marginTop = "32px";
-      }
-    
-  }
-
-  const noScrollHeader = () => {
-    document.getElementById("headerTitle").style.fontSize = "32px";
-    document.getElementById("headerSubtitle").style.fontSize = "16px";
-    document.getElementById("headerSubtitle").style.marginTop = "16px";
-  }
-
-
-  const projectScroll = () => {
-    // console.log("in projectScroll")
-    if (document.body.scrollTop > 175 || document.documentElement.scrollTop > 175) {
-        // console.log("Scrolled to 350")
-        document.getElementById("projectIntro").style.position = "fixed"
-        document.getElementById("projectIntro").style.left = "24%"
-        document.getElementById("projectIntro").style.top = "30vh"
-    } else {
-        // console.log("else")
-        document.getElementById("projectIntro").style.left = "24%"
-        document.getElementById("projectIntro").style.top = "0px"
-        document.getElementById("projectIntro").style.position = "absolute"
-    }
-}
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -77,17 +42,17 @@ const Layout = ({ children, pageTitle, isLandingPage }) => {
 
   return (
     <React.Fragment>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} 
+        isLandingPage = {isLandingPage}
+      />
       
-        {pageTitle ? <div className = "pageTitle">{pageTitle}</div> : null}
+        { pageTitle ? <div className = "pageTitle">{pageTitle}</div> : null }
 
         <main className = "mainContent">
           {children}
         </main>
        
       <Footer></Footer>
-
-     
     </React.Fragment>
   )
 }
@@ -96,4 +61,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default Layout;

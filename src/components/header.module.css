@@ -28,7 +28,7 @@
 .logoTitle {
     font-weight: bolder;
     /* font-size: 100px;  */
-    font-size: 11vh;
+    /* font-size: 11vh; */
     letter-spacing: 3px; 
     /* text-transform: uppercase; */
 
@@ -45,7 +45,7 @@
     bottom: -16px; */
     display: block;
     font-family: "roboto mono";
-    font-size: 32px; 
+    /* font-size: 32px;  */
     margin-top: 32px;
     
 }
@@ -107,16 +107,12 @@
     text-decoration: none; 
 }
 
+/* #headerTitle, #headerSubtitle {
+    transition: 1.5s all;
+} */
+
+
 #headerTitle, #headerSubtitle {
     transition: 1.5s all;
-}
-
-#projectIntro {
-
-}
-
-#thisTitle {
-
-}
-
-#thisDescription {}
+  }
+  

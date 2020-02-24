@@ -4,17 +4,47 @@ import React from "react"
 import styles from './header.module.css'
 // import MenuToggle from './UI/menuToggle'
 
-const Header = ({ siteTitle }) => {
+const Header = ({ isLandingPage, siteTitle }) => {
+
+ 
+  const scrollHeader = () => {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        console.log("scrollHeader")
+        document.getElementById("headerTitle").style.fontSize = "32px";
+        document.getElementById("headerSubtitle").style.fontSize = "16px";
+        document.getElementById("headerSubtitle").style.marginTop = "16px";
+      }
+       else {
+        document.getElementById("headerTitle").style.fontSize = "100px";
+        document.getElementById("headerSubtitle").style.fontSize = "32px";
+        document.getElementById("headerSubtitle").style.marginTop = "32px";
+      }
+    
+  }
+
+  const noScrollHeader = () => {
+
+    document.getElementById("headerTitle").style.fontSize = "32px";
+    document.getElementById("headerSubtitle").style.fontSize = "16px";
+    document.getElementById("headerSubtitle").style.marginTop = "16px";
+  }
+
+  window.onscroll = () => {
+  
+    if (document.getElementById("headerTitle")){
+      scrollHeader();
+    }
+  }
 
   return ( 
     <header className = {styles.Header}>
       <div className = {styles.logo}>
-        <Link className = {styles.logoLink} to="/">
+        <Link id ="headerWrap" className = {styles.logoLink} to="/">
             <div 
-              id="headerTitle"
+              id={ isLandingPage ? "headerTitle" : "staticHeaderTitle" }
               className={styles.logoTitle}> Hello, I'm Grace Yang.
               <span 
-                id="headerSubtitle"
+                id={ isLandingPage ? "headerSubtitle" : "staticHeaderSubtitle"}
                 className={styles.subtitle}> I design &amp; develop ideas.</span>
             </div>    
         </Link>
@@ -24,7 +54,6 @@ const Header = ({ siteTitle }) => {
   )
 }
  
-
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
@@ -33,4 +62,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Header;
