@@ -1,0 +1,81 @@
+.formContainer {
+    width: 80%;
+
+    margin-top: 400px;
+    padding-left: 40vw;
+    padding-bottom: 40px;
+ 
+    margin-left: 80px;
+
+    position: relative;
+
+}
+
+.formTitle {
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: "Roboto mono";
+
+    left: 24%; 
+    top: 0; 
+    position: absolute;
+    /* border: 2px solid blue; */
+    color: #0E072E;
+    /* height: 400px; */
+    width: 350px;
+    text-align: right;
+
+    display: flex;
+    flex-direction: column
+}
+
+.formBlurb { 
+    font-size: 16px;
+    margin-left: 30%; 
+    margin-top: 16px; 
+}
+
+.formBlurb::after {
+    content: 'moc.gnayecargeht@mi';
+    direction: rtl;
+    unicode-bidi: bidi-override !important;
+}
+
+.contactForm {
+    margin-top: 16px; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.formRow {
+    display: flex; 
+}
+
+.formItem {
+    display: flex; 
+    flex-direction: column;
+    /* margin: 16px;  */
+    width: 100%;
+    padding: 16px; 
+}
+
+.textarea {
+    width: 95%;
+}
+
+
+input { 
+    /* max-width: 200px */
+}
+label{
+  font-family: "Roboto mono";
+  font-size: 14px; 
+  font-weight: bold;
+  margin-bottom: 12px
+}
+
+.submitButton { 
+    width: 35%; 
+    margin: auto 16px
+}
