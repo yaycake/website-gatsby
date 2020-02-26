@@ -4,9 +4,10 @@ import styles from './navLinks.module.css'
 
 const navLinks = () => (
     <div className= {styles.links}>
-        <Link to="./about">About</Link> 
-        <Link to ="./resume">Resume </Link>
-        <Link to ="./contact">Contact</Link>
+        <Link to ="/" activeClassName={styles.activeLink}>Work</Link>
+        <Link to="/about" activeClassName={styles.activeLink}>About</Link> 
+        <Link to ="/resume" activeClassName={styles.activeLink}>Resume </Link>
+        <Link to ="/contact" activeClassName={styles.activeLink}>Contact</Link>
     </div>
 )
   

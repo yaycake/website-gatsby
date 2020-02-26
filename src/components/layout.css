@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* min-height: 100vh; */
   /* background: linear-gradient(-45deg, #FFFFFF,#E9FFF2,#DFF5FE, #FAF3FF, #F5F5F5, #F4F4F4); */
-  background-image: linear-gradient(-45deg, #F6F6F6 0%, #DFF5FE 41%, #FAF3FF 97%);
+  background-image: linear-gradient(225deg, #FFFFFF 0%, #E9FFF2 22%, #DFFEF5 41%, #FAF3FF 68%, #F5F5F5 91%, #F4F4F4 100%);;
   
   background-size: 300% 300%;
 	animation: gradient 25s ease infinite;
@@ -688,3 +688,5 @@ pre tt:after {
   font-size: 16px; 
   margin-top: 16px; 
 }
+
+

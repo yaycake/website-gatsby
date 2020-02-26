@@ -7,8 +7,9 @@
     font-weight: bold; 
     text-align: right;
     position: fixed; 
-    right: 32px; 
+    right: 16px;  
     bottom: 32px; 
+    /* border: 1px solid pink;  */
 }
 
 .links > a{
@@ -16,36 +17,31 @@
     color: #0E072E;
     margin-bottom: 16px;
     position: relative;
+    height: 30px;
+    width: 100px; 
+    padding-right: 16px;
+    transform: all 1s; 
+    font-family: "Roboto mono"
   }
 
   .links > a:hover {
-      letter-spacing: 1px; 
       font-weight: bold; 
+      font-size: 18px; 
+  }
+  .activeLink { 
+      font-size: 20px; 
+      font-family: "Helvetica Neue"!important;
   }
 
 
-.links > a:before {
+/* .activeLink::after {
     content: ""; 
+    border:1px solid pink;
+    width: 8px; 
+    height: 8px; 
     position: absolute; 
-    width: 95%;
-    height: 2px; 
-    bottom: -4px; 
-    left: 0; 
-    background-color: #0E072E;
-    visibility: hidden;
-    -webkit-transfor: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.links > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.links>div>a {
-    color: #0E072E; 
-    text-decoration: none; 
-}
+    top: 30%; 
+    right: -8px; 
+    border-radius: 50%;
+    background-image:radial-gradient(50% 80%, #1E0B40 50%, rgba(255,255,255,0.00) 100%);
+} */
