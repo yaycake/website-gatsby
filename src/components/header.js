@@ -4,6 +4,25 @@ import React from "react"
 import styles from './header.module.css'
 
 const Header = ({ isLandingPage, siteTitle }) => {
+
+  function checkDevice () {
+    console.log(navigator.userAgent)
+    if (navigator.userAgent.match(/Android/i) 
+    || navigator.userAgent.match(/webOS/i) 
+    || navigator.userAgent.match(/iPhone/i)  
+    || navigator.userAgent.match(/iPad/i)  
+    || navigator.userAgent.match(/iPod/i) 
+    || navigator.userAgent.match(/BlackBerry/i) 
+    || navigator.userAgent.match(/Windows Phone/i)) { 
+    return false; 
+  } else { 
+    return true; 
+  } 
+  }
+
+  console.log("CHECKING DEVICE: ")
+  console.log(checkDevice())
+  
  
   const scrollHeader = () => {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -29,9 +48,10 @@ const Header = ({ isLandingPage, siteTitle }) => {
   }
 
   window.onscroll = () => {
-  
-    if (document.getElementById("headerTitle")){
-      scrollHeader();
+    if (checkDevice()) {
+      if (document.getElementById("headerTitle")){
+        scrollHeader();
+      }
     }
   }
 

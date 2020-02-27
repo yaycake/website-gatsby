@@ -8,8 +8,8 @@ import styles from './socialLinks.module.css'
 
 const socialLinks = () => {
     return (
-        <div className = {styles.socialLinks}>
-            <div className ={styles.socialFooter}>
+        <div className = {styles.socialFooter}>
+            <div className ={styles.socialLinks}>
                 <a href="http://www.github.com/yaycake">
                     <img className={styles.socialIcon} src={iconGitColor} alt="Visit My Github"/>
                     <span className = {styles.iconLabel}>Github</span>

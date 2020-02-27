@@ -101,8 +101,7 @@ const IndexPage = () => {
                   description = {description}
                   featuredImage = {featuredImageData}
                 /> 
-
-            )
+              )
             })
           }
 
