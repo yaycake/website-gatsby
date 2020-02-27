@@ -71,25 +71,6 @@ const IndexPage = () => {
       return projects.find( (project) => ( project.node.id === id ))
     }
 
-    // Create Event listener function for ScrollMenu Component
-    // const selectProjectHandler = (objId) => {
-
-    //   const selectedProject = findProjectHandler(objId)
-
-    //   setCurrProject({
-    //     id: selectedProject.node.id,
-    //     title: selectedProject.node.frontmatter.title, 
-    //     slug: selectedProject.node.frontmatter.slug, 
-    //     featuredImageData: selectedProject.node.frontmatter.featuredImage.childImageSharp.fluid, 
-    //     html: selectedProject.node.html, 
-    //     description: selectedProject.node.frontmatter.description, 
-    //     tools: selectedProject.node.frontmatter.tools, 
-    //     contributions: selectedProject.node.frontmatter.contributions, 
-    //     skills: selectedProject.node.frontmatter.skills, 
-    //     engagementPeriod: selectedProject.node.frontmatter.engagementPeriod
-    //   })
-    // }
-
   return (
     <Layout 
       isLandingPage = { true }

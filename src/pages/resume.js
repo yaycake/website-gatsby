@@ -10,12 +10,12 @@ import Layout from "../components/layout"
 const Resume = () => {
     
     return (
-        // <Layout>
+
             <div className = {styles.iframeWrapper}>
                 <iframe allow="fullscreen" id={styles.resumePdf} allowtransparency="true" src={resume}  width="100%" height = "100%" style={{position: "absolute", bottom: "0", top: "0", left: "0px", right: "0px", marginBottom: "0!important"}}>
                 </iframe>
             </div>
-        // </Layout>
+  
     )
 }
 

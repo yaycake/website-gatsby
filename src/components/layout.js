@@ -54,7 +54,6 @@ const Layout = ({ children, pageTitle, isLandingPage }) => {
           {children}
         </main>
        
-      {/* <Footer></Footer> */}
       <SocialLinks></SocialLinks>
       <NavLinks></NavLinks>
     </React.Fragment>
