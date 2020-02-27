@@ -112,11 +112,36 @@
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  /* and (min-device-width: 1380px) */
+  and (-webkit-min-device-pixel-ratio: 2) 
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1)
+
+  {
       .tileLarge {
           width: 85vw;
           height: 300px;
           margin: 0 auto;
           margin-bottom: 32px; 
       }
+
+      .tileLarge:hover > a >.title{
+        color: white;
+
+        transform: none;
+        text-align: center;
+    
+        background-color: rgba(255, 255, 255, 0);
+    
+        text-shadow: 1px 1px 3px rgba(0,0,0,0);
+    }
+
+    .tileLarge:hover > a > .title> .description {
+        display: none;
+    }
+
   }
+
+  

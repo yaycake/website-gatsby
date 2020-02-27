@@ -57,3 +57,18 @@
         width: 80vw;
       }
   }
+
+
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    .socialFooter{
+        position: relative;
+        margin-bottom: 40px; 
+        margin-top: 40px; 
+        width: 30vw;
+      }
+
+  }

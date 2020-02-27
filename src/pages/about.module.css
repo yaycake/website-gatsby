@@ -45,3 +45,25 @@
 .aboutSummary > div {
     margin: 16px 0 
 }
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .aboutHeader {
+        text-align: right;
+    /* grid-column: 2/span 2; */
+    margin-top: 35vh;
+        /* margin-top: 0  */
+    }
+
+    .aboutContent{
+        margin-top: 0;
+    }
+    .aboutImage {
+        height: auto;
+    }
+  }

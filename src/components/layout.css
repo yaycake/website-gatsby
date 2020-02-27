@@ -702,10 +702,12 @@ pre tt:after {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
+
     .mainContent{
       display: flex;
+      flex-direction: column;
       padding: 16px; 
-      margin: 16px; 
+      /* margin: 16px;  */
     }
 
     #headerTitle {
