@@ -62,4 +62,4 @@ Storing the data became cumbersome, because the database would have to record an
 
 #### Coverage
 
-<a href="https://mp.weixin.qq.com/s/x5X7dCA_kdx_tkw4XcniNA" target="_blank" rel="noopener">FCC 2018黑客松大赛回顾 Hackathon Review</a>
+<a href="https://mp.weixin.qq.com/s/x5X7dCA_kdx_tkw4XcniNA" target="_blank" rel="noopener">Free Coding Camp 2018黑客松大赛回顾 Hackathon Review</a> - FCC Chengdu

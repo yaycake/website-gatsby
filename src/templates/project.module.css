@@ -4,7 +4,6 @@
 }
 
 .projectContainer {
-
     width: 80%;
 
     margin-top: 400px;
@@ -17,15 +16,13 @@
 }
 
 .projectHeader {
-    left: 24%; 
-    top: 0; 
     position: absolute;
-    /* border: 2px solid blue; */
+    left: 22%; 
+    top: 0; 
+ 
     color: #0E072E;
-    /* height: 400px; */
     width: 350px;
     text-align: right;
-    letter-spacing: 2; 
 }
 
 #projectIntro {
@@ -35,9 +32,9 @@
 
 .projectTitle {
     font-family: "Helvetica Neue";
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bolder;
-    letter-spacing: 1px;
+
 }
 
 .projectDescription {
@@ -125,12 +122,14 @@
 .projectNav > a {
     text-decoration: none; 
     color: #0E072E; 
-    margin: 12px 0
+    margin: 12px 0;
+    font-family: "roboto mono";
+    
 }
 
 .projectNav > a:hover {
-    font-weight: bold;
-    letter-spacing: 1px; 
+    font-weight: bold; 
+    /* font-size: 18px;  */
 }
 
 .projectNav:nth-child(1n) {
@@ -138,5 +137,4 @@
 }
 .projectNav:nth-child(2n){
     text-align: right; 
-  
 }

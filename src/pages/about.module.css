@@ -12,12 +12,11 @@
 }
 
 .aboutHeader {
-    left: 24%; 
+    left: 22%; 
     top: 0; 
     position: absolute;
-    /* border: 2px solid blue; */
+
     color: black;
-    /* height: 400px; */
     width: 350px;
     text-align: right;
     letter-spacing: 2; 
@@ -40,7 +39,6 @@
 
 .aboutImage{
     width: 400px; 
-    /* height: 270px; */
     margin-left: 32px;  
 }
 
@@ -52,7 +50,6 @@
 .aboutSummary  {
     text-align: right;
     font-family: "Roboto Mono";
-    /* font-size: 14px; */
 }
 
 .aboutSummary > div {

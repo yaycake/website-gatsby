@@ -8,21 +8,19 @@
     margin-left: 80px;
 
     position: relative;
-
 }
 
 .formTitle {
     font-size: 18px;
     font-weight: bolder;
     letter-spacing: 1px;
-    font-family: "Roboto mono";
 
-    left: 24%; 
+    left: 22%; 
     top: 0; 
     position: absolute;
-    /* border: 2px solid blue; */
+
     color: #0E072E;
-    /* height: 400px; */
+
     width: 350px;
     text-align: right;
 
@@ -34,6 +32,7 @@
     font-size: 16px;
     margin-left: 30%; 
     margin-top: 16px; 
+    font-family: "Roboto mono";
 }
 
 .formBlurb::after {
@@ -55,7 +54,6 @@
 .formItem {
     display: flex; 
     flex-direction: column;
-    /* margin: 16px;  */
     width: 100%;
     padding: 16px; 
 }
@@ -66,9 +64,9 @@
 
 
 input { 
-    /* max-width: 200px */
 }
-label{
+
+label {
   font-family: "Roboto mono";
   font-size: 14px; 
   font-weight: bold;

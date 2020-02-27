@@ -8,46 +8,32 @@
     position: fixed;
     top: 0;
     z-index: 10;
+    margin-left: 16px;
 }
 
 .logoLink  {
     display: flex;
     align-items: center;
-    /* font-weight: bolder; */
-    /* font-size: 20px;  */
-    letter-spacing: 1px;
+    color:#0F0731;
     text-decoration: none; 
-    color:#0E072E; 
     cursor: pointer;
-    /* width: 100px; */
-    /* width: 200px; */
+   
     position: relative;
-    
 }
 
 .logoTitle {
     font-weight: bolder;
-    /* font-size: 100px;  */
-    /* font-size: 11vh; */
-    letter-spacing: 3px; 
-    /* text-transform: uppercase; */
-
 
     position: fixed;
     top: 5%;   
 
     mix-blend-mode: difference;
-
 }
 
 .subtitle {
-    /* position: absolute;
-    bottom: -16px; */
     display: block;
     font-family: "roboto mono";
-    /* font-size: 32px;  */
     margin-top: 32px;
-    
 }
 
 .logoLink:hover >  .g::after {
@@ -62,12 +48,12 @@
     padding: 4px;
 }
 
-.slash {
+/* .slash {
     font-size: 28px;
     font-weight: lighter;
     opacity: .5
-}
-
+} */
+/* 
 .headerLinks {
     display: flex;
     width: 180px; 
@@ -75,13 +61,13 @@
     margin-right: 8px;
     cursor: pointer;
     font-weight: bold
-}
+} */
 
-.headerLinks > .aboutLink, .resumeLink{
+/* .headerLinks > .aboutLink, .resumeLink{
     position: relative
-}
+} */
 
-.headerLinks > .aboutLink:before, .resumeLink:before {
+/* .headerLinks > .aboutLink:before, .resumeLink:before {
     content: ""; 
     position: absolute; 
     width: 100%;
@@ -90,13 +76,13 @@
     left: 0; 
     background-color: #000;
     visibility: hidden;
-    -webkit-transfor: scaleX(0);
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-}
+} */
 
-.headerLinks > .aboutLink:hover:before, .resumeLink:hover:before {
+/* .headerLinks > .aboutLink:hover:before, .resumeLink:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -105,11 +91,11 @@
 .headerLinks>div>a {
     color: #0E072E; 
     text-decoration: none; 
-}
-
-/* #headerTitle, #headerSubtitle {
-    transition: 1.5s all;
 } */
+
+#headerTitle, #headerSubtitle {
+    transition: 1.5s all;
+}
 
 
 #headerTitle, #headerSubtitle {

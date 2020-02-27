@@ -8,20 +8,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* min-height: 100vh; */
-  /* background: linear-gradient(-45deg, #FFFFFF,#E9FFF2,#DFF5FE, #FAF3FF, #F5F5F5, #F4F4F4); */
-  background-image: linear-gradient(225deg, #FFFFFF 0%, #E9FFF2 22%, #DFFEF5 41%, #FAF3FF 68%, #F5F5F5 91%, #F4F4F4 100%);;
-  
-  background-size: 300% 300%;
-	animation: gradient 25s ease infinite;
+  background-color: linear-gradient(-45deg, #FFFFFF,#E9FFF2,#DFF5FE, #FAF3FF, #F5F5F5, #F4F4F4);
+  /* background-image: linear-gradient(-45deg, #F75600 0%, #3289FF 75%); */
+ 
+  animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
 	0% {
-		background-position: 0% 50%;
-	}
+		background-position: 0% 25%;
+  }
+  
+  20% {
+    background-position: 0% 50%;
+  }
 	50% {
-		background-position: 100% 50%;
-	}
+		background-position: 100% 70%;
+  }
+  
+  70%{
+    background-position: 100% 50%;
+  }
 	100% {
 		background-position: 0% 50%;
 	}
@@ -668,8 +675,6 @@ pre tt:after {
   max-width: 100%!important;
 }
 
-
-
   
 #headerTitle {
   font-size: 100px;
@@ -682,11 +687,14 @@ pre tt:after {
 
 #staticHeaderTitle {
   font-size: 32px; 
+  color: rgba(15,7,49,.75)
+
 }
 
 #staticHeaderSubtitle {
   font-size: 16px; 
   margin-top: 16px; 
+  color: rgba(15,7,49,.75)
 }
 
 

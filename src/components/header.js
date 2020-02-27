@@ -5,7 +5,6 @@ import styles from './header.module.css'
 // import MenuToggle from './UI/menuToggle'
 
 const Header = ({ isLandingPage, siteTitle }) => {
-
  
   const scrollHeader = () => {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -13,11 +12,12 @@ const Header = ({ isLandingPage, siteTitle }) => {
         document.getElementById("headerTitle").style.fontSize = "32px";
         document.getElementById("headerSubtitle").style.fontSize = "16px";
         document.getElementById("headerSubtitle").style.marginTop = "16px";
+        document.getElementById("headerTitle").style.color = "rgba(15, 7, 49, .75)"
       }
        else {
         document.getElementById("headerTitle").style.fontSize = "100px";
         document.getElementById("headerSubtitle").style.fontSize = "32px";
-        document.getElementById("headerSubtitle").style.marginTop = "32px";
+        document.getElementById("headerSubtitle").style.marginTop = "32px";document.getElementById("headerTitle").style.color = "rgba(15, 7, 49, 1)"
       }
     
   }
@@ -27,6 +27,7 @@ const Header = ({ isLandingPage, siteTitle }) => {
     document.getElementById("headerTitle").style.fontSize = "32px";
     document.getElementById("headerSubtitle").style.fontSize = "16px";
     document.getElementById("headerSubtitle").style.marginTop = "16px";
+    document.getElementById("headerTitle").style.color = "rgba(15, 7, 49, .75)"
   }
 
   window.onscroll = () => {
@@ -48,7 +49,6 @@ const Header = ({ isLandingPage, siteTitle }) => {
                 className={styles.subtitle}> I design &amp; develop ideas.</span>
             </div>    
         </Link>
-
       </div>
     </header>
   )
