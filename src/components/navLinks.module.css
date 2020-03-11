@@ -31,3 +31,14 @@
       font-family: "Helvetica Neue"!important;
       color: rgba(15, 7, 49, 1)!important;
   }
+
+  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      .links {
+        margin-right: 0;
+        position: absolute;
+      }
+  }

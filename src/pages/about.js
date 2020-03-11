@@ -8,7 +8,7 @@ const About = () => {
         <Layout 
             isLandingPage = {true}
         >
-            <div className = {styles.aboutContainer}>
+            {/* <div className = {styles.aboutContainer}> */}
                 <div id = "aboutIntro" className={styles.aboutHeader}>
                     <div className = {styles.bolder}> Status</div>
                     <div className = {styles.aboutDescription}>Open for freelance projects, remote positions, and WeChat Mini Program consultations.</div>
@@ -17,12 +17,11 @@ const About = () => {
                         <div> <div className={styles.bolder}>Tools</div> Sketch, Illustrator, Visual Studio Code</div>
                     </div>
                 </div>
-
                 <div className={styles.aboutContent}>
                    <img className = {styles.aboutImage} src={octoMe} />
 
                 </div>
-            </div>
+            {/* </div> */}
         </Layout>
     )
 }

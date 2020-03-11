@@ -1,26 +1,20 @@
 .tileLarge {
-    margin: 80px; 
-    width: 600px;
-    height: 400px;
+    margin: 80px 0;
+    min-height: 400px;
     text-decoration: none; 
     position: relative; 
     color: white;
    
     background-color:  rgba(255, 255, 255, 1)
-
-    /* border: 2px solid gold; */
 }
 
 .tileLarge > a  {
     text-decoration: none; 
-    /* overflow: visible !important */
 }
 
 .tileLarge:hover {
-    /* box-shadow: 2px 2px 4px rgba(0,0,0,.2); */
     background-color:  rgba(255, 255, 255, 0)
 }
-
 
 .description {
     display: none;
@@ -31,8 +25,6 @@
     padding-top: 16px;
     margin: right;
     width: 50%;
-
-    /* transform: translate(-480px, -135px); */
 
     text-decoration: none; 
     color: #1E0B40;
@@ -49,8 +41,6 @@
 
 .tileLarge:hover > a > .title> .description {
     display: block;
-    
-
 }
 
 .tileLarge:hover > a > .tileLarge_image {
@@ -81,26 +71,20 @@
     z-index: 3;
 
     text-shadow: 2px 2px 5px rgba(0,0,0,.2);
-
-    /* transition: .5s all ease-in-out */
 }
 
 .tileLarge:hover > a >.title{
     color: #1E0B40;
-    transform: translateX(-110%);
+    transform: translateX(-106%);
     text-align: right; 
 
     background-color: rgba(255, 255, 255, 0);
 
     text-shadow: 1px 1px 3px rgba(0,0,0,0);
-   
 }
 
 .tileLarge_image {
     box-shadow: 2px 2px 4px rgba(0,0,0,.2);
-    /* mix-blend-mode: difference; */
-    /* filter: grayscale(100%); */
-    /* opacity: .3 */
 }
 
 .tileLarge_image > div {
@@ -124,14 +108,40 @@
     padding-bottom: 0
 }
 
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  /* and (min-device-width: 1380px) */
+  and (-webkit-min-device-pixel-ratio: 2) 
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1)
 
-/* for mobile: */
+  {
+      .tileLarge {
+          width: 85vw;
+          height: 300px;
+          margin: 0 auto;
+          margin-bottom: 32px; 
+      }
 
-/* .tileLarge:hover > a > .text {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 1px; 
-    text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+      .tileLarge:hover > a >.title{
+        color: white;
 
-    transform: translateX(-120%)
-} */
+        transform: none;
+        text-align: center;
+    
+        background-color: rgba(255, 255, 255, 0);
+    
+        text-shadow: 1px 1px 3px rgba(0,0,0,0);
+    }
+
+    .tileLarge:hover > a > .title> .description {
+        display: none;
+    }
+
+  }
+
+  

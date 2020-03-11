@@ -39,9 +39,18 @@ const ProjectTemplate = ({data, pageContext}) => {
         <Layout
             isLandingPage = {false}
         >
+             <div id = "projectIntro" className={styles.projectHeader}>
+                <div id = "thisTitle"  className = {styles.projectTitle}>{frontmatter.title} </div>
+                <div id = "thisDescription" className = {styles.projectDescription}>{frontmatter.description}</div>
+                <div className = {styles.projectSummary}>
+                    <div> <div className={styles.bolder}>Skills</div> {frontmatter.skills} </div>
+                    <div> <div className={styles.bolder}>Tools</div> {frontmatter.tools} </div>
+                    <div> <div className={styles.bolder}>Engagement Period</div> {frontmatter.engagementPeriod} </div>
+                </div>
+            </div>
             <div className={styles.projectContainer}>
 
-                <div id = "projectIntro" className={styles.projectHeader}>
+                {/* <div id = "projectIntro" className={styles.projectHeader}>
                     <div id = "thisTitle"  className = {styles.projectTitle}>{frontmatter.title} </div>
                     <div id = "thisDescription" className = {styles.projectDescription}>{frontmatter.description}</div>
                     <div className = {styles.projectSummary}>
@@ -49,7 +58,7 @@ const ProjectTemplate = ({data, pageContext}) => {
                         <div> <div className={styles.bolder}>Tools</div> {frontmatter.tools} </div>
                         <div> <div className={styles.bolder}>Engagement Period</div> {frontmatter.engagementPeriod} </div>
                     </div>
-                </div>
+                </div> */}
          
                 <Image className = {styles.featuredImage} fluid = {frontmatter.featuredImage.childImageSharp.fluid}/>
                 <div

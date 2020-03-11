@@ -82,8 +82,8 @@ const IndexPage = () => {
        
           { projects.map(({node: project}) => {
 
-            console.log("this project: ")
-            console.log(project)
+            // console.log("this project: ")
+            // console.log(project)
 
             const id = project.id;
             const title = project.frontmatter.title; 
@@ -101,8 +101,7 @@ const IndexPage = () => {
                   description = {description}
                   featuredImage = {featuredImageData}
                 /> 
-
-            )
+              )
             })
           }
 

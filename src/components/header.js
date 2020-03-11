@@ -1,9 +1,42 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styles from './header.module.css'
 
+import MenuToggle from './UI/menuToggle';
+import MobileMenu from './mobileMenu';
+
+
 const Header = ({ isLandingPage, siteTitle }) => {
+
+  const [currToggle, setCurrToggle] = useState(false)
+
+
+  const toggleHandler = () => {
+    console.log("In Toggle Handler")
+    console.log(currToggle)
+    setCurrToggle(!currToggle)
+
+
+  console.log("currToggle changed?: ")
+  console.log(currToggle)
+  }
+
+
+  function checkDevice () {
+    console.log(navigator.userAgent)
+    if (navigator.userAgent.match(/Android/i) 
+    || navigator.userAgent.match(/webOS/i) 
+    || navigator.userAgent.match(/iPhone/i)  
+    || navigator.userAgent.match(/iPad/i)  
+    || navigator.userAgent.match(/iPod/i) 
+    || navigator.userAgent.match(/BlackBerry/i) 
+    || navigator.userAgent.match(/Windows Phone/i)) { 
+      return false; 
+    } else { 
+        return true; 
+    } 
+  }
  
   const scrollHeader = () => {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -29,9 +62,10 @@ const Header = ({ isLandingPage, siteTitle }) => {
   }
 
   window.onscroll = () => {
-  
-    if (document.getElementById("headerTitle")){
-      scrollHeader();
+    if (checkDevice()) {
+      if (document.getElementById("headerTitle")){
+        scrollHeader();
+      }
     }
   }
 
@@ -48,6 +82,9 @@ const Header = ({ isLandingPage, siteTitle }) => {
             </div>    
         </Link>
       </div>
+
+      <MenuToggle clickToggle = {toggleHandler} openedMenu = {currToggle}></MenuToggle>
+      { currToggle ? <MobileMenu></MobileMenu> : null }
     </header>
   )
 }

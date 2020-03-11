@@ -1,10 +1,10 @@
-.socialLinks {
+.socialFooter {
     position: fixed; 
-    left:32px;
+    left: 32px;
     bottom: 40px;
 }
 
-.socialFooter {
+.socialLinks {
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
@@ -14,7 +14,7 @@
     position: relative
 }
 
-.socialFooter > a {
+.socialLinks > a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,3 +44,31 @@
 .socialFooter > a:hover >.iconLabel {
     font-weight: bold
 }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      .socialFooter{
+        position: relative;
+        margin-bottom: 40px; 
+        margin-top: 40px; 
+        width: 80vw;
+      }
+  }
+
+
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    .socialFooter{
+        position: relative;
+        margin-bottom: 40px; 
+        margin-top: 40px; 
+        width: 30vw;
+      }
+
+  }

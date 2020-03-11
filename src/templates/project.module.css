@@ -4,25 +4,22 @@
 }
 
 .projectContainer {
-    width: 80%;
+    margin-top: 35vh; 
 
-    margin-top: 400px;
-    padding-left: 40vw;
-    padding-bottom: 40px;
- 
-    margin-left: 80px;
-
-    position: relative;
+    grid-column: 4/span 3;
 }
 
 .projectHeader {
-    position: absolute;
+    /* position: absolute;
     left: 22%; 
     top: 0; 
  
     color: #0E072E;
-    width: 350px;
+    width: 350px; */
     text-align: right;
+
+    grid-column: 2/span 2;
+    margin-top: 35vh;
 }
 
 #projectIntro {
@@ -91,7 +88,8 @@
 }
 
 .projectSummary > div {
-    margin: 16px 0 
+    margin-left: auto;
+    width: 350px; 
 }
 
 .projectContent> ul {
@@ -108,7 +106,6 @@
 }
 
 .projectNav {
-    position: absolute;
     width: 250px; 
     bottom: 80px;
    
@@ -117,6 +114,8 @@
     display: flex; 
     flex-direction: column; 
     z-index: 2;
+
+    margin-bottom: 80px;
 }
 
 .projectNav > a {
@@ -138,3 +137,52 @@
 .projectNav:nth-child(2n){
     text-align: right; 
 }
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen 
+  /* and (min-device-width: 375px)  */
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  
+  {
+      .projectHeader{
+          margin-bottom: 32px; 
+      }
+
+      .projectContainer {
+          margin-top: 0
+      }
+
+      .projectNav { 
+          width: auto; 
+          padding-right: 32px
+      }
+
+      .projectNav:nth-child(1n) {
+        text-align: right;
+
+    }
+      
+  }
+
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    .projectSummary > div {
+        width: auto;
+    }
+
+    .projectHeader {
+        margin-top: 10vh;
+        grid-column: 1/span 3;
+    }
+
+    .projectContainer {
+        margin-top: 10vh;
+        grid-column: 4/span 4;
+    }
+
+  }

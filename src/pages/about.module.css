@@ -1,45 +1,35 @@
 .aboutContainer {
 
-    width: 80%;
 
-    margin-top: 400px;
-    padding-left: 40vw;
-    padding-bottom: 40px;
- 
-    margin-left: 80px;
-
-    position: relative;
 }
 
 .aboutHeader {
-    left: 22%; 
-    top: 0; 
-    position: absolute;
-
-    color: black;
-    width: 350px;
+ 
+    /* width: 350px; */
     text-align: right;
-    letter-spacing: 2; 
+
+    grid-column: 2/span 2;
+    margin-top: 35vh; 
 }
 
 #aboutIntro {
-    transition: 1.5s all;
-    color: black;
-    position: fixed; 
-    left: 24%; 
-    top: 30vh;
+
 }
 .aboutDescription { 
     font-family: "Roboto Mono"
 }
 
 .aboutContent {
+    margin-top: 35vh; 
     margin-bottom: 80px;
+    grid-column: 4/span 3;
 }
 
 .aboutImage{
-    width: 400px; 
-    margin-left: 32px;  
+    /* width: 400px; 
+    margin-left: 32px;  */
+    height: 350px; 
+  
 }
 
 .bolder {
@@ -55,3 +45,25 @@
 .aboutSummary > div {
     margin: 16px 0 
 }
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .aboutHeader {
+        text-align: right;
+    /* grid-column: 2/span 2; */
+    margin-top: 35vh;
+        /* margin-top: 0  */
+    }
+
+    .aboutContent{
+        margin-top: 0;
+    }
+    .aboutImage {
+        height: auto;
+    }
+  }
