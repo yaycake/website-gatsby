@@ -63,7 +63,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
     
     .Header {
         padding-bottom: 35vh;
-        position: relative
+        position: relative;
+        flex-direction: column-reverse;
+       
     }
 
     .logoTitle {

@@ -1,9 +1,27 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styles from './header.module.css'
 
+import MenuToggle from './UI/menuToggle';
+import MobileMenu from './mobileMenu';
+
+
 const Header = ({ isLandingPage, siteTitle }) => {
+
+  const [currToggle, setCurrToggle] = useState(false)
+
+
+  const toggleHandler = () => {
+    console.log("In Toggle Handler")
+    console.log(currToggle)
+    setCurrToggle(!currToggle)
+
+
+  console.log("currToggle changed?: ")
+  console.log(currToggle)
+  }
+
 
   function checkDevice () {
     console.log(navigator.userAgent)
@@ -14,15 +32,11 @@ const Header = ({ isLandingPage, siteTitle }) => {
     || navigator.userAgent.match(/iPod/i) 
     || navigator.userAgent.match(/BlackBerry/i) 
     || navigator.userAgent.match(/Windows Phone/i)) { 
-    return false; 
-  } else { 
-    return true; 
-  } 
+      return false; 
+    } else { 
+        return true; 
+    } 
   }
-
-  console.log("CHECKING DEVICE: ")
-  console.log(checkDevice())
-  
  
   const scrollHeader = () => {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -68,6 +82,9 @@ const Header = ({ isLandingPage, siteTitle }) => {
             </div>    
         </Link>
       </div>
+
+      <MenuToggle clickToggle = {toggleHandler} openedMenu = {currToggle}></MenuToggle>
+      { currToggle ? <MobileMenu></MobileMenu> : null }
     </header>
   )
 }

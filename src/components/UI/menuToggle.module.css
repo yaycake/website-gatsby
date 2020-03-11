@@ -1,19 +1,97 @@
-.menuToggle {
-    width: 8px;
-    height: 8px;
 
-    background-color: white;
-
-    /* box-sizing: border-box;
-    border-top: 20px solid rgba(255,255,255,0);
-    border-right:20px solid rgba(255,255,255,0);
-    border-bottom: 20px solid rgba(255,255,255,0);
-    border-left: 20px solid rgba(255,255,255,1) */
-}
 
 .toggleWrap {
-    width: 24px; 
-    height: 24px;
-    background-color: white;
-    border: 8px solid black
+    width: 40px;
+    height: 40px;
+
+    margin-bottom: auto;
+    z-index: 30;
+
+    cursor:pointer;
+
+    
+}
+
+.toggleWrap>div {
+    height: 4px; 
+    background-color: #0F0731;
+    /* margin-bottom: 8px;  */
+    margin-bottom: 25%;
+}
+
+
+
+/* Icon 3 */
+
+#toggleIcon span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #toggleIcon span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 18px;
+  }
+  
+  #toggleIcon span:nth-child(4) {
+    top: 36px;
+  }
+  
+  #toggleIcon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  .toggleWrap.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #toggleIcon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  #toggleIcon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .toggleWrap{
+        margin-left: auto;
+    }
+  }
+
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      .toggleWrap{
+          display: none;
+      }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .toggleWrap{
+        display: none;
+    }
 }

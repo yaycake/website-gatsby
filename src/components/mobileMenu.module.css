@@ -1,0 +1,23 @@
+.closedMenu { 
+    display: none; 
+}
+
+.openMenu{
+    display: block; 
+}
+
+.mobileMenuWrapper{
+    width: 100vw; 
+    height: 100vh; 
+    border:1px solid orangered;
+    background-color: white; 
+    top: 0;
+    /* background-color: black;  */
+    color: white; 
+    position: absolute;
+    z-index: 21; 
+}
+.menuContainer {
+    background-color: pink; 
+    width: 500px 
+}
