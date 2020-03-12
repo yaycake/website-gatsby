@@ -5,17 +5,10 @@
 
 .projectContainer {
     margin-top: 35vh; 
-
     grid-column: 4/span 3;
 }
 
 .projectHeader {
-    /* position: absolute;
-    left: 22%; 
-    top: 0; 
- 
-    color: #0E072E;
-    width: 350px; */
     text-align: right;
 
     grid-column: 2/span 2;
@@ -138,12 +131,87 @@
     text-align: right; 
 }
 
+/* ----------- Desktop ----------- */
+
+@media only screen and (min-width: 768px){
+    .projectLand {
+        height: 45vh; 
+        position: relative; 
+    }
+    
+    .projectContainer {
+        margin-top: 35vh; 
+    
+        grid-column: 4/span 3;
+    }
+    
+    .projectHeader {
+        text-align: right;
+        grid-column: 2/span 2;
+        margin-top: 35vh;
+    }
+    
+    #projectIntro {
+        transition: 1.5s all;
+        color:#0E072E;
+    }
+    
+    
+    .projectContent {
+        margin-bottom: 80px;
+        color: #0E072E
+    }
+
+    
+    .projectContent > blockquote {
+        border-left: 2px solid #0E072E;
+        padding-left: 1.45rem;
+    
+        letter-spacing: 1px;
+    
+        padding: 20px;
+        margin: 32px 0!important;
+    }
+    
+    
+    .projectSummary > div {
+        margin-left: auto;
+        width: 350px; 
+    }
+    
+   
+    
+    .line { 
+        margin-top: calc(1.45rem - 1px);
+    }
+    
+    .projectNav {
+        width: 250px; 
+        bottom: 80px;
+       
+        left: 30%;
+     
+        display: flex; 
+        flex-direction: column; 
+        z-index: 2;
+    
+        margin-bottom: 80px;
+    }
+
+    
+    .projectNav:nth-child(1n) {
+        text-align: left;
+    }
+    .projectNav:nth-child(2n){
+        text-align: right; 
+    }
+}
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 @media only screen 
   /* and (min-device-width: 375px)  */
   and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
+  /* and (-webkit-min-device-pixel-ratio: 2)  */
   
   {
       .projectHeader{
@@ -155,7 +223,7 @@
       }
 
       .projectNav { 
-          width: auto; 
+          width: 100%;
           padding-right: 32px
       }
 

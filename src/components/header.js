@@ -9,65 +9,65 @@ import MobileMenu from './mobileMenu';
 
 const Header = ({ isLandingPage, siteTitle }) => {
 
-  const [currToggle, setCurrToggle] = useState(false)
+  // const [currToggle, setCurrToggle] = useState(false)
 
 
-  const toggleHandler = () => {
-    console.log("In Toggle Handler")
-    console.log(currToggle)
-    setCurrToggle(!currToggle)
+  // const toggleHandler = () => {
+  //   console.log("In Toggle Handler")
+  //   console.log(currToggle)
+  //   setCurrToggle(!currToggle)
 
 
-  console.log("currToggle changed?: ")
-  console.log(currToggle)
-  }
+  // console.log("currToggle changed?: ")
+  // console.log(currToggle)
+  // }
 
 
-  function checkDevice () {
-    console.log(navigator.userAgent)
-    if (navigator.userAgent.match(/Android/i) 
-    || navigator.userAgent.match(/webOS/i) 
-    || navigator.userAgent.match(/iPhone/i)  
-    || navigator.userAgent.match(/iPad/i)  
-    || navigator.userAgent.match(/iPod/i) 
-    || navigator.userAgent.match(/BlackBerry/i) 
-    || navigator.userAgent.match(/Windows Phone/i)) { 
-      return false; 
-    } else { 
-        return true; 
-    } 
-  }
+  // function checkDevice () {
+  //   console.log(navigator.userAgent)
+  //   if (navigator.userAgent.match(/Android/i) 
+  //   || navigator.userAgent.match(/webOS/i) 
+  //   || navigator.userAgent.match(/iPhone/i)  
+  //   || navigator.userAgent.match(/iPad/i)  
+  //   || navigator.userAgent.match(/iPod/i) 
+  //   || navigator.userAgent.match(/BlackBerry/i) 
+  //   || navigator.userAgent.match(/Windows Phone/i)) { 
+  //     return true; 
+  //   } else { 
+  //       return false; 
+  //   } 
+  // }
  
-  const scrollHeader = () => {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        console.log("scrollHeader")
-        document.getElementById("headerTitle").style.fontSize = "32px";
-        document.getElementById("headerSubtitle").style.fontSize = "16px";
-        document.getElementById("headerSubtitle").style.marginTop = "16px";
-        document.getElementById("headerTitle").style.color = "rgba(15, 7, 49, .75)"
-      }
-       else {
-        document.getElementById("headerTitle").style.fontSize = "80px";
-        document.getElementById("headerSubtitle").style.fontSize = "32px";
-        document.getElementById("headerSubtitle").style.marginTop = "32px";document.getElementById("headerTitle").style.color = "rgba(15, 7, 49, 1)"
-      }
+  // const scrollHeader = () => {
+  //     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  //       console.log("scrollHeader")
+  //       document.getElementById("headerTitle").style.fontSize = "32px";
+  //       document.getElementById("headerSubtitle").style.fontSize = "16px";
+  //       document.getElementById("headerSubtitle").style.marginTop = "16px";
+  //       document.getElementById("headerTitle").style.color = "rgba(15, 7, 49, .75)"
+  //     }
+  //      else {
+  //       document.getElementById("headerTitle").style.fontSize = "80px";
+  //       document.getElementById("headerSubtitle").style.fontSize = "32px";
+  //       document.getElementById("headerSubtitle").style.marginTop = "32px";document.getElementById("headerTitle").style.color = "rgba(15, 7, 49, 1)"
+  //     }
     
-  }
+  // }
 
-  const noScrollHeader = () => {
-    document.getElementById("headerTitle").style.fontSize = "32px";
-    document.getElementById("headerSubtitle").style.fontSize = "16px";
-    document.getElementById("headerSubtitle").style.marginTop = "16px";
-    document.getElementById("headerTitle").style.color = "rgba(15, 7, 49, .75)"
-  }
+  // const noScrollHeader = () => {
+  //   document.getElementById("headerTitle").style.fontSize = "32px";
+  //   document.getElementById("headerSubtitle").style.fontSize = "16px";
+  //   document.getElementById("headerSubtitle").style.marginTop = "16px";
+  //   document.getElementById("headerTitle").style.color = "rgba(15, 7, 49, .75)"
+  // }
 
-  window.onscroll = () => {
-    if (checkDevice()) {
-      if (document.getElementById("headerTitle")){
-        scrollHeader();
-      }
-    }
-  }
+  // window.onscroll = () => {
+  //   if (!checkDevice()) {
+  //     if (document.getElementById("headerTitle")){
+  //       scrollHeader();
+  //     }
+  //   }
+  // }
 
   return ( 
     <header className = {styles.Header}>
@@ -82,9 +82,9 @@ const Header = ({ isLandingPage, siteTitle }) => {
             </div>    
         </Link>
       </div>
-
+{/* 
       <MenuToggle clickToggle = {toggleHandler} openedMenu = {currToggle}></MenuToggle>
-      { currToggle ? <MobileMenu></MobileMenu> : null }
+      { currToggle ? <MobileMenu></MobileMenu> : null } */}
     </header>
   )
 }
