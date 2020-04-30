@@ -15,7 +15,7 @@
     /* background-color: black;  */
     color: white; 
     position: absolute;
-    z-index: 21; 
+    z-index: 9; 
 }
 .menuContainer {
     background-color: pink; 

@@ -6,10 +6,8 @@
     align-content: center;
   
     position: relative;
-    top: 0;
+    top: 32px;
     z-index: 10;
-
-    
     padding-bottom: 35vh;
    
     flex-direction: column-reverse;

@@ -21,13 +21,26 @@ const Layout = ({ children, pageTitle, isLandingPage }) => {
     }
   `)
 
+  
+
   const [currToggle, setCurrToggle] = useState(false)
 
 
   const toggleHandler = () => {
-    console.log("In Toggle Handler")
-    console.log(currToggle)
-    setCurrToggle(!currToggle)
+    // console.log("In Toggle Handler")
+    // console.log(currToggle)
+    // setCurrToggle(!currToggle)
+
+    if (currToggle == true) {
+      setCurrToggle(false)
+      document.documentElement.style.overflow = 'auto';
+      document.body.scroll = "yes";
+    } else if (currToggle == false) {
+      setCurrToggle(true)
+      document.documentElement.style.overflow = 'hidden';
+      document.body.scroll = "no";
+    }
+
 
 
   console.log("currToggle changed?: ")
@@ -46,7 +59,7 @@ const Layout = ({ children, pageTitle, isLandingPage }) => {
       />
 
       <MenuToggle clickToggle = {toggleHandler} openedMenu = {currToggle}></MenuToggle>
-      { currToggle ? <MobileMenu></MobileMenu> : null }
+      { currToggle ? <MobileMenu clickToggle = {toggleHandler}></MobileMenu> : null }
       
         { pageTitle ? <div className = "pageTitle">{pageTitle}</div> : null }
 

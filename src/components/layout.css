@@ -681,11 +681,14 @@ pre tt:after {
 
   
 #headerTitle {
-  font-size: 100px;
+  /* font-size: 100px; */
+  font-size: 32px;
   transition: 3s all
 }
+
 #headerSubtitle {
-  font-size: 32px; 
+  /* font-size: 32px;  */
+  font-size: 20px; 
   transition: 3s all
 }
 

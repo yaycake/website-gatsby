@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styles from './mobileMenu.module.css'
 
-const MobileMenu = () => {
+const MobileMenu = ( {clickToggle, openedMenu}) => {
     // let mobileMenuClasses;
     // if (view) {
     //   mobileMenuClasses = [styles.mobileMenuWrapper, styles.openMenu]      
@@ -11,9 +11,9 @@ const MobileMenu = () => {
     // }
 
     return (
-        <div className={styles.mobileMenuWrapper}>
+        <div className={styles.mobileMenuWrapper} onClick = {clickToggle}>
             <div className = {styles.menuContainer}>
-
+            
             </div>
         </div>
     )

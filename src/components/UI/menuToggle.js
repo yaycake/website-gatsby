@@ -11,7 +11,6 @@ const MenuToggle = ({clickToggle, openedMenu}) => {
             <span></span>
             <span></span>
             <span></span>
-            <span></span>
         </div>
         
     )
