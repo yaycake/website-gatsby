@@ -1,8 +1,7 @@
 .links {
-    display: flex;
+
     flex-direction: column; 
-    font-weight: bold; 
-    
+    font-weight: bold;  
 }
 
 .links > a {
@@ -28,15 +27,22 @@
       color: rgba(15, 7, 49, 1)!important;
   }
 
-  /* ----------- Desktop ----------- */
+/* ----------- Desktop ----------- */
 
 @media only screen and (min-width: 768px){
     .links {
         text-align: right;
+        display: flex;
         margin-right: 32px;
         position: fixed; 
         right: 16px;  
         bottom: 32px; 
+    }
+}
+
+@media (min-width: 768px){
+    .links {
+        display: flex; 
     }
 }
 
@@ -45,8 +51,20 @@
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-      /* .links {
-        margin-right: 0;
-        position: absolute;
-      } */
+      .links {
+          display: none; 
+          border:2px solid pink;
+      }
+      .links > a { 
+          display: none;
+      }
   }
+
+@media (max-device-width: 375px) {
+    .links {
+        display: none; 
+    }
+    .links > a {
+        display: none;
+    }
+}

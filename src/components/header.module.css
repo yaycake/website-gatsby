@@ -8,7 +8,7 @@
     position: relative;
     top: 32px;
     z-index: 10;
-    padding-bottom: 35vh;
+    /* padding-bottom: 35vh; */
    
     flex-direction: column-reverse;
 }
@@ -26,7 +26,6 @@
     font-weight: bolder; 
     position: relative;
     top: 5%;   
-
     mix-blend-mode: difference;
 }
 
@@ -56,11 +55,15 @@
 /* ----------- Desktop ----------- */
 
 @media only screen and (min-width: 768px){
+    .header-module--Header--UTTVA {
+        padding-bottom: 16px!important;
+    }
     .Header {
         position: fixed;
         margin-left: 16px;
         flex-direction: row; 
         padding: 32px;  
+        padding-bottom: 16px!important;
     }
     .logoTitle{
         position: fixed;
@@ -79,11 +82,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
     
     .Header {
-        padding-bottom: 35vh;
+        /* padding-bottom: 35vh; */
         position: relative;
         flex-direction: column-reverse;
-        
-       
+
+
     }
 
     .logoTitle {
