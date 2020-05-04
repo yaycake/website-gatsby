@@ -15,7 +15,7 @@ const ContactPage = () => {
             {/* <div className = {styles.formContainer}> */}
                 <div className = {styles.formTitle}>
                     Contact Me
-                    <text className = {styles.formBlurb}>Send me a message here, or email me at </text>
+                    <p className = {styles.formBlurb}>Send me a message here, or email me at </p>
                 </div>
                 
                 <form 
