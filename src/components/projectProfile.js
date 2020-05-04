@@ -6,7 +6,7 @@ import Image from 'gatsby-image'
 
 const ProjectProfile= ({ title, slug, featuredImage, html, projectType, contributions, skills, engagementPeriod}) => {
     
-    window.scrollTo(0, 500);
+    // window.scrollTo(0, 500);
 
     return (
 
