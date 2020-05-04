@@ -106,10 +106,6 @@ const IndexPage = () => {
           }
 
         </div>
-          
-
-             
-            
           </div>
 
     </Layout>
