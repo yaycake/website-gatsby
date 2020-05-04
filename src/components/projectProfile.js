@@ -5,6 +5,9 @@ import styles from './projectProfile.module.css'
 import Image from 'gatsby-image'
 
 const ProjectProfile= ({ title, slug, featuredImage, html, projectType, contributions, skills, engagementPeriod}) => {
+    
+    // window.scrollTo(0, 500);
+
     return (
 
         <div data-title={slug} className ={styles.projectContent}>

@@ -12,10 +12,10 @@ const ContactPage = () => {
     // const email = 
     return (
         <Layout>
-            <div className = {styles.formContainer}>
+            {/* <div className = {styles.formContainer}> */}
                 <div className = {styles.formTitle}>
                     Contact Me
-                    <text className = {styles.formBlurb}>Send me a message here, or email me at </text>
+                    <p className = {styles.formBlurb}>Send me a message here, or email me at </p>
                 </div>
                 
                 <form 
@@ -23,7 +23,7 @@ const ContactPage = () => {
                     action="https://formspree.io/im@thegraceyang.com"
                     method="POST"
                 >
-                    <div className={styles.formRow}>
+                    {/* <div className={styles.formRow}> */}
                         <div className={styles.formItem}>
                             <label>Name</label>
                             <input type="text" name="name"/>
@@ -33,7 +33,7 @@ const ContactPage = () => {
                             <label>Email</label>
                             <input type="text" name="_replyto"/>
                         </div>
-                    </div>
+                    {/* </div> */}
                     
                      
                      <div className={styles.formItem}>
@@ -43,7 +43,7 @@ const ContactPage = () => {
 
                     <button className = {styles.submitButton} type="submit">Send</button>
                 </form>
-            </div>
+            {/* </div> */}
             
         </Layout>
         

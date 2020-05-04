@@ -95,7 +95,8 @@ h4 {
   and (-webkit-min-device-pixel-ratio: 2) { 
 
     .projectContainer {
-        margin-top: 40vh; 
+        /* margin-top: 65vh; */
+        margin-top: 100vh; 
         grid-column: 1/span 1;
     }
 

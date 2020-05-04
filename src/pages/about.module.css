@@ -29,7 +29,7 @@
     /* width: 400px; 
     margin-left: 32px;  */
     height: 350px; 
-  
+
 }
 
 .bolder {
@@ -56,7 +56,7 @@
     .aboutHeader {
         text-align: right;
     /* grid-column: 2/span 2; */
-    margin-top: 35vh;
+        margin-top: 70vh;
         /* margin-top: 0  */
     }
 

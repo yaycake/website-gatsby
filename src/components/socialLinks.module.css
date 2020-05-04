@@ -2,6 +2,7 @@
     position: fixed; 
     left: 32px;
     bottom: 40px;
+    z-index: 21
 }
 
 .socialLinks {

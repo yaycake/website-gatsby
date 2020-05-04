@@ -23,20 +23,21 @@ const Layout = ({ children, pageTitle, isLandingPage }) => {
 
   const [currToggle, setCurrToggle] = useState(false)
 
-
   const toggleHandler = () => {
-    console.log("In Toggle Handler")
-    console.log(currToggle)
-    setCurrToggle(!currToggle)
 
-
-  console.log("currToggle changed?: ")
-  console.log(currToggle)
+    if (currToggle == true) {
+      setCurrToggle(false)
+      document.documentElement.style.overflow = 'auto';
+      document.body.scroll = "yes";
+    } else if (currToggle == false) {
+      setCurrToggle(true)
+      document.documentElement.style.overflow = 'hidden';
+      document.body.scroll = "no";
+    }
   }
 
-  if (currToggle) {
-    document.documentElement.style.overflow = 'hidden';
-    document.body.scroll = "no";
+  const scrollTopHandler = () => {
+    window.scrollTo(0,0)
   }
 
   return (
@@ -44,9 +45,9 @@ const Layout = ({ children, pageTitle, isLandingPage }) => {
       <Header siteTitle={data.site.siteMetadata.title} 
         isLandingPage = {isLandingPage}
       />
-
+      <div className="mobile-arrow">&#8595;</div>
       <MenuToggle clickToggle = {toggleHandler} openedMenu = {currToggle}></MenuToggle>
-      { currToggle ? <MobileMenu></MobileMenu> : null }
+      { currToggle ? <MobileMenu clickToggle = {toggleHandler}></MobileMenu> : null }
       
         { pageTitle ? <div className = "pageTitle">{pageTitle}</div> : null }
 
@@ -55,7 +56,13 @@ const Layout = ({ children, pageTitle, isLandingPage }) => {
         </main>
        
       <SocialLinks></SocialLinks>
+   
       <NavLinks></NavLinks>
+
+      <div className="mobile-top" onClick = {scrollTopHandler}>
+        &#8593; Top
+      </div>
+      
     </React.Fragment>
   )
 }

@@ -44,6 +44,8 @@ const ProjectsPage = () => {
 
   const projects = data.allMarkdownRemark.edges;
 
+  window.scrollTo(0,100)
+
   // const [currProject, setCurrProject] = useState({
   //   id: projects[0].node.id, 
   //   title: projects[0].node.frontmatter.title,

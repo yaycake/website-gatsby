@@ -1,23 +1,23 @@
 
 
 .toggleWrap {
-    width: 40px;
-    height: 40px;
+  
+  width: 40px;
+  height: 40px;
+  margin-bottom: auto;
+  z-index: 30;
 
-    margin-bottom: auto;
-    z-index: 30;
+  cursor: pointer;
 
-    cursor:pointer;
-    border:2px solid blue
-
-    
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
 }
 
-.toggleWrap>div {
+.toggleWrap > span {
     height: 4px; 
     background-color: #0F0731;
-    /* margin-bottom: 8px;  */
-    margin-bottom: 25%;
+    width: 100%;
 }
 
 
@@ -71,9 +71,17 @@
   and (-webkit-min-device-pixel-ratio: 2) {
     .toggleWrap{
         margin-left: auto;
+        position:absolute;
+        bottom: 32px; 
+        right: 32px; 
     }
   }
 
+  @media only screen and (min-width: 768px){ 
+    .toggleWrap{
+      display: none;
+    }
+  }
 
 
 /* ----------- Non-Retina Screens ----------- */
