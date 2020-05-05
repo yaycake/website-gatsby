@@ -8,7 +8,7 @@ const TileLarge= ({ projectId, title, slug, featuredImage, description}) => {
     return (
         
         <div className = {styles.tileLarge}>
-            <Link key = {projectId} className ={styles.link}to = {`/${slug}/`}>
+            <Link key = {projectId} className ={styles.link} to = {`/${slug}/`}>
                 <Image className = {styles.tileLarge_image} fluid = {featuredImage} alt ={title}/>
                 <div className = {styles.title} > 
                     {title}
