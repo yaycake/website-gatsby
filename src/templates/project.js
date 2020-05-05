@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'; 
+import React from 'react'; 
 import { graphql, Link } from 'gatsby'; 
 import Layout from '../components/layout';
 import Image from "gatsby-image"
@@ -35,13 +35,6 @@ const ProjectTemplate = ({data, pageContext}) => {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark
 
-    const projectTitle = useRef()
-
-    useEffect( ()=> {
-        console.log(projectTitle)
-        projectTitle.current.scrollIntoView()
-        // projectTitle.current.scrollTop()
-    }, [])
 
 
     return (
