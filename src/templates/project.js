@@ -31,16 +31,18 @@ export const pageQuery = graphql`
 
 const ProjectTemplate = ({data, pageContext}) => {
 
-    const {next, prev} = pageContext
+    const { next, prev } = pageContext
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark
+
+
 
     return (
         <Layout
             isLandingPage = {false}
         >
              <div id = "projectIntro" className={styles.projectHeader}>
-                <div id = "thisTitle"  className = {styles.projectTitle}>{frontmatter.title} </div>
+                <div  id = "projectTitle" className = {styles.projectTitle}>{frontmatter.title} </div>
                 <div id = "thisDescription" className = {styles.projectDescription}>{frontmatter.description}</div>
                 <div className = {styles.projectSummary}>
                     <div> <div className={styles.bolder}>Skills</div> {frontmatter.skills} </div>
@@ -48,7 +50,7 @@ const ProjectTemplate = ({data, pageContext}) => {
                     <div> <div className={styles.bolder}>Engagement Period</div> {frontmatter.engagementPeriod} </div>
                 </div>
             </div>
-            <div className={styles.projectContainer}>
+            <div ref={projectTitle} className={styles.projectContainer}>
 
                 {/* <div id = "projectIntro" className={styles.projectHeader}>
                     <div id = "thisTitle"  className = {styles.projectTitle}>{frontmatter.title} </div>

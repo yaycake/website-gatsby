@@ -6,11 +6,10 @@ import Image from 'gatsby-image'
 
 const ProjectProfile= ({ title, slug, featuredImage, html, projectType, contributions, skills, engagementPeriod}) => {
     
-    // window.scrollTo(0, 500);
 
     return (
 
-        <div data-title={slug} className ={styles.projectContent}>
+        <div id={titleId} data-title={slug} className ={styles.projectContent}>
             {/* <h2>{title} Page</h2> */}
             
             <Image className = {styles.featuredImage} fluid = {featuredImage} alt ={title}/>
